@@ -39,3 +39,19 @@ So parts printed and ready start building again.  Got the first of the z motor m
 And finally getting it attached to the frame with the motor as well.  Definitely like how sharp the classic Voron black and red color combo looks.
 
 {{ feature_image(path="/content/pages/projects/voron_build/ZDriveInstalled.jpg", width=0, height=500, op="fit_height", caption="") }}
+
+# Assembly of Z-Drives 2, 3, & 4
+## Z-Drive #2
+Well, made my first mistake. I had misread these directions from the assembly manual:
+
+{{ feature_image(path="/content/pages/projects/voron_build/ZBeltAssemblyManual.png", width=0, height=500, op="fit_height", caption="I had taken this to mean it should be positioned at the end of the shaft 🤦‍♂️") }}
+
+What I didn't miss in the directions was the note that said to be sure to use thread locker to make sure on all screws which I dutifully did.
+
+This in turn meant I couldnt get this screw back out of the pulley and ended up striping the screw trying to do so.  My kit only has the exact number of pulleys of this size that are needed.  But by the end of tomorrow, I'll have a whole supply of 20T 9mm pulleys curtesy of Amazon.  Live and learn.
+
+{{ feature_image(path="/content/pages/projects/voron_build/StuckScrewPulley.jpg", width=0, height=500, op="fit_height", caption="RIP little pulley, hopefully you are the only ruined part of this build. 🤞 At least you were cheap to replace.") }}
+
+I did figure out a neat trick for aligning the motor mounts on the 2020 extrusion.  If you place one of the allen wrenches through the holes you can usse them to help align the t-nuts into the right position making it much easier to get everything aligned before inserting the screws.
+
+{{ feature_image(path="/content/pages/projects/voron_build/2020TNutAlignment.png", width=0, height=500, op="fit_height", caption="") }}
