@@ -9,6 +9,8 @@
 {% set pages = term.pages %}<!---->
 {% elif section is defined %}<!---->
 {% set pages = section.pages %}<!---->
+{% elif blogs_section is defined %}<!---->
+{% set pages = section.pages %}<!---->
 {% endif %}<!---->
 
 {% for page in pages %}

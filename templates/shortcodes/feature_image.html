@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="{{ get_url(path='custom.css') | safe }}">
+<div class="not-prose singleimage-container">
+  {% set caption = caption %}
+  {% set image = resize_image(path=path, width=width, height=height, op=op) %}
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="{{ image.url }}" />
+  </div>  
+  {% if caption is matching("[[:ascii:]]*$") %}
+  <div class="imageitem-items photo-caption">
+    {{ caption }}
+  </div>
+  {% endif %}
+</div>

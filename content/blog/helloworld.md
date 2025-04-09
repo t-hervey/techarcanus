@@ -1,6 +1,7 @@
 +++
 title = "Hello World"
 date = 2025-04-07
+description = "A brief introduction to this site."
 [taxonomies]
 tags = ["musings"]
 +++

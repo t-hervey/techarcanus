@@ -67,9 +67,9 @@ name = "Travis Hervey"
 bio = "My corner of the web where I can share projects, thoughts and general techno-wizardry 🧙‍♂️"
 
 # The URL of avatar.
-avatar_url = "icons/github.svg"
+avatar_url = "icons/Twenty_sided_dice.svg"
 # Invert color in dark mode.
-avatar_invert = true
+avatar_invert = false
 
 # The social icons below the profile on the home page.
 # The `name` should be the file name of static/icons/*.svg or the icon name of https://simpleicons.org/
@@ -90,9 +90,9 @@ url = "https://www.linkedin.com/in/travis-hervey-2a8bbb12/"
 name = "Projects"
 url = "$BASE_URL/projects"
 
-[[extra.menu]]
-name = "Archive"
-url = "$BASE_URL/archive"
+#[[extra.menu]]
+#name = "Archive"
+#url = "$BASE_URL/archive"
 
 [[extra.menu]]
 name = "Tags"
@@ -105,8 +105,8 @@ url = "$BASE_URL/about"
 # The page footer options.
 [extra.footer]
 since = 2025
-license = "CC BY-SA 4.0"
-license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
+license = "CC BY-NC-SA 4.0"
+license_url = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed"
 
 # The giscus comment options, only available when comment is enabled.
 [extra.giscus]
