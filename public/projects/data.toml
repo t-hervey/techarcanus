@@ -1,7 +1,0 @@
-[[project]]
-name = "Formbot Voron 2.4"
-desc = "Details on my first Voron 2.4 build!"
-tags = ["3dprinting", "voron", "project"]
-links = [
-    { name = "voron 2.4", url = "/projects/voronbuild" }
-]
