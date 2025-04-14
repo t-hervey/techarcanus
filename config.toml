@@ -11,7 +11,7 @@ default_language = "en"
 
 
 # When set to "true", a feed is automatically generated.
-generate_feeds = false
+generate_feeds = true
 
 # The filenames to use for the feeds. Used as the template filenames, too.
 # Defaults to ["atom.xml"], which has a built-in template that renders an Atom 1.0 feed.
