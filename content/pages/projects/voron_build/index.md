@@ -57,7 +57,7 @@ I did figure out a neat trick for aligning the motor mounts on the 2020 extrusio
 {{ feature_image(path="/content/pages/projects/voron_build/2020TNutAlignment.png", width=0, height=500, op="fit_height", caption="") }}
 
 ## Z-Drive #3 & #4
-Pretty much the same as the previous two drives, definitely get better as I go along and doing each one of these.  Sanding the rods definitely makes it easier to slide the 625 bearings on when they don't slide easily on their own.
+Pretty much the same as the previous two drives, definitely getting better as I go along and doing each one of these.  Sanding the rods definitely makes it easier to slide the 625 bearings on when they don't slide easily on their own.
 
 Couple of things I learned:
  - If I did this again, I'd probably print out a 33mm tube for easily positioning the pulley on the rod.
