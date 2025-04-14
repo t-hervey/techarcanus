@@ -25,17 +25,45 @@ Getting the frame together was pretty straightforward.
 {{ feature_image(path="/content/pages/projects/voron_build/VoronFrameBuilt.jpg", width=0, height=500, op="fit_height", caption="") }}
 
 # Baseplate and starting assembly of Z-Drives
-So I've had a few delays.  I found that I had overlooked printing one part of the z motor mount and needed to print those.  Unfortunately my Ender 3 S1 that I had printed all my parts on had recently suffered a catastrophic blob of death and resulted in needing to replace the heat block.  Which meant ordering parts (I really should keep a few of those handy as it seems to happen about once a year...)  Finally got the ender rebuilt and tuned back up.  Turns out the likely reason that I got blob of death in the first place was that my print head had started to wobble some and the eccentric nut on the carriage needing tightening up.
+So I've had a few delays.  I found that I had overlooked printing one part of the z motor mount and needed to print those.  Unfortunately my Ender 3 S1 that I had printed all my parts on had recently suffered a catastrophic blob of death and resulted in needing to replace the heat block.  Which meant ordering parts (I really should keep a few of those handy as it seems to happen about once a year...)  Finally got the ender rebuilt and tuned back up.  Turns out the likely reason that I got a blob of death in the first place was that my print head had started to wobble some and the eccentric nut on the carriage needed tightening up.
 
 So parts printed and ready start building again.  Got the first of the z motor mounts done.  Couple of things I learned:
 
 - Getting the 625 bearings on the shaft and in the right position can be a real pain.  I ended up having to use a nail tap to get them into the right position.  I've since read that either sticking the shafts in the freezer overnight or doing the light sanding on them can help with getting them on and in the right position.
 - Definitely recommend having the pulley jig for spacing, made getting the pulley on the motor so much easier: [Voron 2.4 Pulley Jig](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Tools/pulley_jig.stl)
 
-{{ feature_image(path="/content/pages/projects/voron_build/ZDriveMountPulley.jpg", width=0, height=500, op="fit_height", caption="Adjusting the 625 bearings when they didnt line up with the mount was a pain!") }}
+{{ feature_image(path="/content/pages/projects/voron_build/ZDriveMountPulley.jpg", width=0, height=500, op="fit_height", caption="Adjusting the 625 bearings when they didn't line up with the mount was a pain!") }}
 
 {{ feature_image(path="/content/pages/projects/voron_build/ZDriveMountAssembled.jpg", width=0, height=500, op="fit_height", caption="First of four") }}
 
 And finally getting it attached to the frame with the motor as well.  Definitely like how sharp the classic Voron black and red color combo looks.
 
 {{ feature_image(path="/content/pages/projects/voron_build/ZDriveInstalled.jpg", width=0, height=500, op="fit_height", caption="") }}
+
+# Assembly of Z-Drives 2, 3, & 4
+## Z-Drive #2
+Well, made my first mistake. I had misread these directions from the assembly manual:
+
+{{ feature_image(path="/content/pages/projects/voron_build/ZBeltAssemblyManual.png", width=0, height=500, op="fit_height", caption="I had taken this to mean it should be positioned at the end of the shaft 🤦‍♂️") }}
+
+What I didn't miss in the directions was the note that said to be sure to use thread locker to make sure on all screws which I dutifully did.
+
+This in turn meant I couldn't get this screw back out of the pulley and ended up striping the screw trying to do so.  My kit only has the exact number of pulleys of this size that are needed.  But by the end of tomorrow, I'll have a whole supply of 20T 9mm pulleys courtesy of Amazon.  Live and learn.
+
+{{ feature_image(path="/content/pages/projects/voron_build/StuckScrewPulley.jpg", width=0, height=500, op="fit_height", caption="RIP little pulley, hopefully you are the only ruined part of this build. 🤞 At least you were cheap to replace.") }}
+
+I did figure out a neat trick for aligning the motor mounts on the 2020 extrusion.  If you place one of the allen wrenches through the holes you can use them to help align the t-nuts into the right position making it much easier to get everything aligned before inserting the screws.
+
+{{ feature_image(path="/content/pages/projects/voron_build/2020TNutAlignment.png", width=0, height=500, op="fit_height", caption="") }}
+
+## Z-Drive #3 & #4
+Pretty much the same as the previous two drives, definitely get better as I go along and doing each one of these.  Sanding the rods definitely makes it easier to slide the 625 bearings on when they don't slide easily on their own.
+
+Couple of things I learned:
+ - If I did this again, I'd probably print out a 33mm tube for easily positioning the pulley on the rod.
+ - Placing your rod/pulley assembly in the mounting bracket periodically helps to check that everything is lining up as it should.
+{{ feature_image(path="/content/pages/projects/voron_build/AligningZDriveRod.jpg", width=0, height=500, op="fit_height", caption="Checking as you go along results in smooth pulley operation later.") }}
+
+And here they are, all four z drives installed!
+
+{{ feature_image(path="/content/pages/projects/voron_build/ZDrivesInstalled.jpg", width=0, height=500, op="fit_height", caption="") }}
