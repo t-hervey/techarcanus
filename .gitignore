@@ -4,3 +4,4 @@
 *.scss.map
 static/processed_images/
 public/
+*.idea
