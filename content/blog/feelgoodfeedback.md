@@ -1,6 +1,6 @@
 +++
 title = "Feel Good Feedback (Or how to brighten your software dev's day)"
-date = 2025-05-26
+date = 2025-05-27
 description = "How one random comment turned my day around for the better."
 [taxonomies]
 tags = ["software engineering", "depression", "feedback"]
