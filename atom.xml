@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>TechArcanus</title>
+    <subtitle>The thoughts and musing of a lone techno-wizard!</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.techarcanus.com/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.techarcanus.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-05-27T00:00:00+00:00</updated>
+    <id>https://blog.techarcanus.com/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Feel Good Feedback (Or how to brighten your software dev&#x27;s day)</title>
+        <published>2025-05-27T00:00:00+00:00</published>
+        <updated>2025-05-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/feelgoodfeedback/"/>
+        <id>https://blog.techarcanus.com/blog/feelgoodfeedback/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/feelgoodfeedback/">&lt;p&gt;It&#x27;s not too often that I smile in general delight when reading my slack messages at work.  Usually my slack messages contain things like, &quot;Is dev broken for you?&quot;, &quot;Do you know why autofac can&#x27;t find xyz?!?&quot;, or &quot;quick question...&quot;.  It&#x27;s exhausting to say the least.  The last couple of weeks have been particularly demanding on the slack front as I filled in for my team lead while he was taking some much deserved time off to get married and enjoy their honeymoon.&lt;&#x2F;p&gt;
+&lt;p&gt;Today though as I was taking a heads-up break and scrolling through my slack channels looking for things I needed to read or respond to I clicked into our #random channel and found the following:&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;slack_message.a5a7efb514ec13bf.png&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    ❤️
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;I smiled and chuckled a bit because I could hear the person who wrote the message saying it out loud and genuinely felt that all too rare glimmer of happiness and pride in the work that my team and I had done in writing this particular piece of software.  But the impact was so much more profound.  To put it into context, I woke up this morning with little desire to get to work and get to refactoring some code that was distributed across four or five different repositories.  In turn, I felt bad that I didn&#x27;t feel motivated to work after a long holiday weekend.  Uninspired and demotivated by the job to be done I was feeling pretty glum and this is on top of all the normal day-to-day struggles with depression and general loathing I feel at times.&lt;&#x2F;p&gt;
+&lt;p&gt;That one comment though turned my day around.  I don&#x27;t need a lot of praise to feel rewarded in my work and too much praise can feel like pandering or lip service.  This though was just a random comment by someone who used the software I wrote.  It made their day better and their work easier to do.  Things clicked into place.  The work I do, the software I write, can make the jobs of others easier.  Then I thought, if this person finds our software useful, it&#x27;s likely our other clients do too.  I went back to work feeling renewed and energized, yeah, this refactor isn&#x27;t likely to have epic levels of impact on our user&#x27;s day-to-day lives, but it was a component in service of the broader context of our software, and it was improving things.  I got back to coding, buoyed by those few words.&lt;&#x2F;p&gt;
+&lt;p&gt;As a software engineer who works remotely, it&#x27;s really easy to become disconnected from those who use your software and the impact it has on their lives.  At previous job, I got to regularly interact with the people who used the software I wrote.  I&#x27;d pass them on the way to lunch and they would say something like, &quot;hey, that thing you wrote saved us like 30 hours of manual processing this week, thanks!&quot;.  For me, it wasn&#x27;t ever the praise that felt good, it was hearing that the thing I wrote made a positive impact, that it made their life better or improved their productivity.  That&#x27;s what software engineers (or at least this one anyway) want to hear.  What was the impact the software had?  Did it make things better?  If not, how could we improve it to make it better and in turn make your job or life easier?&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bill Gate&#x27;s Final Chapter</title>
+        <published>2025-05-26T00:00:00+00:00</published>
+        <updated>2025-05-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/gatesfinalchapter/"/>
+        <id>https://blog.techarcanus.com/blog/gatesfinalchapter/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/gatesfinalchapter/">&lt;p&gt;In one of my previous jobs, somewhere around 2015ish, we were given an assignment to improve our public speaking and presentation skills as well as to serve to get to know folks better.  The assignment was to pick a public figure who you found inspiring and explain why.  In 2025, I ruefully look back on my selection of Elon Musk as a failure in discerning credibility and character.  At the time though, he was going to electrify America with an affordable Tesla 3 in every driveway and a stylish solar power generating roof on every home.  He was making huge strides in making reusable rocket boosters a reality and promoting a dream of one day colonizing Mars.  It was exciting stuff and his appeals to a greener, technology fueled future deeply appealed to me.  When folks told him he couldn&#x27;t build a reusable rocket he proceeded anyway and soon proved them wrong.  I thought his vision of the future was something to be admired and filled my allotted presentation time with a list of his accomplishments and goals and was ready to proclaim him Mayor of Muskville on Mars.&lt;&#x2F;p&gt;
+&lt;p&gt;Over the last few years, whatever admiration I had for him has eroded to nothing with first his social media antics and now his political manipulations promoting his own self interests and fascism.&lt;&#x2F;p&gt;
+&lt;p&gt;But the same contempt I now hold for Musk was something I also once held for Bill Gates in the early 00&#x27;s.  Like Musk, Gates was the world&#x27;s richest man at various points in time, invoking an unreasonable sense of envy, He had gotten to that lofty position as CEO of one of the largest software companies in the world and during his tenure he did some shady things to suppress and overcome his competition.  Anyone else remember this early internet meme of Gates as a member of Star Trek&#x27;s Borg whose creed was, &quot;Resistance is futile, you will be assimilated.&quot;?&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;bill-gates-borg.d5ea9fe94ff6e610.jpg&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Now though many folks see Gates in a much different light, including myself.  Many have dubbed him the elder statesman of technology and Silicon Valley though it has been his commitment to his (and former wife Melinda&#x27;s) &lt;a href=&quot;https:&#x2F;&#x2F;www.gatesnotes.com&#x2F;meet-bill&#x2F;my-philanthropy&quot;&gt;Gates Foundation&lt;&#x2F;a&gt; and the radical decision to disburse all of his wealth to charitable causes that impresses me now.  Gates spends time reading and researching on how the world works so that he can make informed, science backed decisions on where to invest his wealth.  These investments though are not meant to grow that wealth or his status but to benefit some of the most underserved communities in the world to fight &lt;a href=&quot;https:&#x2F;&#x2F;gcgh.grandchallenges.org&#x2F;&quot;&gt;disease&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;www.gatesfoundation.org&#x2F;our-work&#x2F;programs&#x2F;global-growth-and-opportunity&#x2F;water-sanitation-and-hygiene&#x2F;reinvent-the-toilet-challenge-and-expo&quot;&gt;sanitation&lt;&#x2F;a&gt;, and &lt;a href=&quot;https:&#x2F;&#x2F;www.gatesfoundation.org&#x2F;our-work&#x2F;programs&#x2F;global-growth-and-opportunity&#x2F;nutrition&quot;&gt;nutrition&lt;&#x2F;a&gt; issues.  Gates, through his personal blog, &lt;a href=&quot;https:&#x2F;&#x2F;www.gatesnotes.com&#x2F;books&quot;&gt;shares thoughts and reviews&lt;&#x2F;a&gt; on many of the books that are influencing his thinking and that he finds insightful.  (If I was a bigger reader of non-fiction he would be a go-to source of reading material because many of the books he reviews sound fascinating!)  I can only wish to be as thoughtful and eloquent in my reviews as he is in his own.  When you start looking at the exploits of other billionaires passion projects to launch rockets to space, Gates focus on improving the world we live in now and in ways that don&#x27;t provide any financial benefit to himself is beyond commendable.  Its a breath of fresh air that reminds us that those who achieve great success not only have a great responsibility to society but are actually capable and &lt;em&gt;willing&lt;&#x2F;em&gt; to give back to that society.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;ve read this far, you&#x27;re maybe wondering why I&#x27;m bothering to gush about Gates in particular.  He recently shared an update on his blog titled, &lt;a href=&quot;https:&#x2F;&#x2F;www.gatesnotes.com&#x2F;home&#x2F;home-page-topic&#x2F;reader&#x2F;n20-years-to-give-away-virtually-all-my-wealth&quot;&gt;My new deadline: 20 years to give away virtually all my wealth&lt;&#x2F;a&gt; Take a few minutes, go and read it, its a lot better than this.&lt;&#x2F;p&gt;
+&lt;p&gt;Did you read it? Amazing, right? It made me feel some glimmer of hope and good about the world.  That there are folk out there in the world who have come into great wealth and privilege and are using that to make the world better.  I&#x27;m going to borrow the same highlight from Gates&#x27; post here where he writes, &quot;As Microsoft turns 50 years old, it feels right that I celebrate the milestone by committing to give away the resources I earned through the company.&quot;  &lt;em&gt;wow&lt;&#x2F;em&gt; What if more billionaires took that mentality to their wealth.  Maybe more pertinently, what if more regular folk took that mindset?  What will I do with the things that I leave behind?  What am I doing &lt;em&gt;today&lt;&#x2F;em&gt; with the resources and time I&#x27;ve earned or been given to help others?  Hard questions indeed.&lt;&#x2F;p&gt;
+&lt;p&gt;I don&#x27;t know that I would have ever seen myself saying it before, but, thank you, Mr. Gates for becoming a role model of philanthropy and giving hope and opportunity to so many.  May your final chapter be filled with joy in seeing the positive impact of your contributions.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Review: The Forever War</title>
+        <published>2025-05-12T00:00:00+00:00</published>
+        <updated>2025-05-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/theforeverwar/"/>
+        <id>https://blog.techarcanus.com/blog/theforeverwar/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/theforeverwar/">&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;strong&gt;Title&lt;&#x2F;strong&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;em&gt;The Forever War&lt;&#x2F;em&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Author&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;Joe Halderman&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Format&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;Audiobook&lt;&#x2F;td&gt;&lt;td&gt;(Narrated by George K. Wilson)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Overall Rating&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;⭐️⭐️⭐️½ of 5&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;I&#x27;ve been on a bit of a military scifi kick here lately. Maybe it can be blamed on playing too much of the excellent &lt;a href=&quot;https:&#x2F;&#x2F;store.steampowered.com&#x2F;agecheck&#x2F;app&#x2F;553850&#x2F;&quot;&gt;Helldivers 2&lt;&#x2F;a&gt; and watching &lt;em&gt;Starship Troopers&lt;&#x2F;em&gt; again recently but after finishing up the &lt;a href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;firstlawtrilogy&#x2F;&quot;&gt;First Law Trilogy&lt;&#x2F;a&gt; I was really hankering for something in the scifi space and this has been on my list for awhile. Once again, thanks to it being readily available via Libby and the public library it ended up next on my list of audiobooks to listen to.&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;TheForeverWarCover.dba39589dde63e77.jpg&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;I&#x27;ve read all the primary novels in John Scalzi&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;series&#x2F;40789-old-man-s-war&quot;&gt;Old Man&#x27;s War&lt;&#x2F;a&gt; as well as a handful of lesser books in the genre so I was genuinely excited to finally get around to one of the classics of the genre.  Originally published in 1974, &lt;em&gt;The Forever War&lt;&#x2F;em&gt; definitely feels more dated in 2025 than some of these more contemporary novels do.  Some of its assumptions about the advancement of technology were just flat out wrong and it feels jarring to read about periods of the 2010s and 2020s now where there is not an ever-present global internet or even the commonplace smartphone.  It also feels that many of the social issues that are brought up (namely homosexuality and to a lesser extent drug use) seem sort of blasé by today&#x27;s standards.  In the novel, smoking pot is apparently legal and being gay can be seen as taboo or uncomfortable to our protagonist who is is displaced from his own time.  Maybe this was a greater social commentary in the final days of the Vietnam War era (of which Halderman was a veteran of) but it seemed to be more in the way of the narrative when read with modern eyes.&lt;&#x2F;p&gt;
+&lt;p&gt;The novel&#x27;s specific focus on certain periods of time, also led to a curious thought while reading: how many other novels published in the past and either make predictions of the future or commentary upon it, have already had the future time they pertain to pass?  The most famous of them, in my opinion at least, being &lt;em&gt;Back to the Future: Part II&lt;&#x2F;em&gt; when Marty travels to the futuristic 2015. You, me, and every other child of the 90s is still waiting for the real hoverboard.  I kind of wanted to compile a list of said media and give it an accuracy rating for this post, but honestly if I waited to post this review until that was done then a 1000-year war would likely be a distant memory by the time I finished it.&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+    
+    
+    
+    &lt;div style=&quot;width:100%;height:0;padding-bottom:75%;position:relative;&quot;&gt;
+        &lt;iframe src=&quot;https:&amp;#x2F;&amp;#x2F;giphy.com&amp;#x2F;embed&amp;#x2F;AI29vJMw1TZhYwXmyi&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;&#x2F;iframe&gt;
+    &lt;&#x2F;div&gt;
+    &lt;p&gt;
+        &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;giphy.com&amp;#x2F;gifs&amp;#x2F;BTTF-AI29vJMw1TZhYwXmyi&quot;&gt;via GIPHY&lt;&#x2F;a&gt;
+    &lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;Beyond the entertaining thought experiment of what media has passed its envisioned future, I mention it because I found that with the dates being as specific as they are, it&#x27;s a bit jarring to the narrative at times to stop and think, &quot;no, that&#x27;s not how that ended up working out.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve been a bit harsh on the book, but there are also some excellent ideas in the book as well. Having read other later works of military scifi, you can clearly see that many borrow bricks from the foundation that Halderman laid out here.  The senseless nature of human conflict, the everyman perspective of just trying to survive and retain some tattered shreds of your humanity, and of course the hallmark descriptive action pieces.  When the focus is on the conflict or its impact on the humans fighting it, Halderman&#x27;s writing shines the clearest here.  It&#x27;s probably also worthwhile to consider that &lt;em&gt;The Forever War&lt;&#x2F;em&gt; is definitely used as a vehicle to convey the author&#x27;s exploration of themes that were incredibly pertinent in 1970s America and to hold a mirror up to society at that time.&lt;&#x2F;p&gt;
+&lt;p&gt;My only thought&#x27;s on the audiobook narration itself is that it was competent but kind of drab.  When there are so many names of soldiers, many of who don&#x27;t live long enough to get much personality anyway, the somewhat dry presentation of the narrator leads to sections where you can easily lose track of who is speaking.  In sections of dialog when more than two people are speaking this can become rather problematic.  This may be more an artifact of its time of release though as in recent years audiobook narrators like Jeff Hays and Travis Baldree have really upped the production values of audiobooks so maybe I&#x27;m a bit spoiled in my opinion there.&lt;&#x2F;p&gt;
+&lt;p&gt;To conclude, I&#x27;d say &lt;em&gt;The Forever War&lt;&#x2F;em&gt; is required reading for even casual fans of military scifi which I count myself among.  While elements may have not stood the test of time, the foundational ideas and concepts have left their fingerprint on many novels that have come after.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Review: First Law Trilogy</title>
+        <published>2025-04-29T00:00:00+00:00</published>
+        <updated>2025-04-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/firstlawtrilogy/"/>
+        <id>https://blog.techarcanus.com/blog/firstlawtrilogy/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/firstlawtrilogy/">&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;strong&gt;&lt;em&gt;First Law Trilogy&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;em&gt;The Blade Itself&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;em&gt;Before They Are Hanged&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;em&gt;Last Argument of Kings&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Author&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;Joe Abercrombie&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Format&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;Audiobook&lt;&#x2F;td&gt;&lt;td&gt;(Narrated by Steven Pacey)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Overall Rating&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;⭐️⭐️⭐️⭐️&#x2F;5&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;I&#x27;ve avoided the &lt;em&gt;The First Law Trilogy&lt;&#x2F;em&gt; for years.  Something about the bloody cover and the description on the back really didn&#x27;t pique my interest.  Descriptions I read of the book painted a dark and grim tale of wretched souls doing sadistic things without the slightest of moral qualms which didn&#x27;t really sit well with me or my tastes.  Despite all that I even tried reading it once previously and just couldn&#x27;t get past the first few chapters.&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;TheBladeItself.3882811385aff4dc.jpg&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    First book in the series &amp;#x27;The Blade Itself&amp;#x27; with its bloody cover 🩸🗡️
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;During a recent trip to my office HQ, a coworker and I were talking about books (specifically audiobooks) that we both had enjoyed.  I of course gushed all fanboy-like about &lt;a href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;search?utf8=%E2%9C%93&amp;amp;query=dungeon+crawler+carl&quot;&gt;Dungeon Crawler Carl&lt;&#x2F;a&gt; and the epic narration of &lt;a href=&quot;https:&#x2F;&#x2F;soundbooththeater.com&#x2F;team&#x2F;jeff-hays&#x2F;&quot;&gt;Jeff Hays&lt;&#x2F;a&gt; and my coworker in turn told me about his favorite series, the titular &lt;em&gt;First Law Trilogy&lt;&#x2F;em&gt;.  His praise of the series, as enthusiastic as my own of DCC, convinced me enough that I promised to add it to my backlog.  A few weeks later I had finished up my latest audiobook and due to the nature of library holds &lt;em&gt;The Blade Itself&lt;&#x2F;em&gt; was the only thing available at that moment, so I figured I&#x27;d give it another go.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m not going to give a full review of each book but more of a quick take on each book in the series and some overall impressions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-blade-itself&quot;&gt;&lt;em&gt;The Blade Itself&lt;&#x2F;em&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Much like my previous attempt, I found the opening chapters of the book kind of slow.  My initial impressions of Glokta, Logen and Jezal were poor.  Glokta came off as some sort of miserly sadistic cripple, Logen a stereotypically brutish warrior, and Jezal as the foppish noble.  In hindsight, you can see that these conventional and unimaginative portrayals were likely just done intentionally so that the author could later flip them on the head and shatter the surrounding tropes. That said, this first book does take its time introducing not only these three but also the host of supporting characters who you only eventually grow to appreciate.  Only after a while do you begin to find the wit and dark humour in Glokta&#x27;s internal monologue about his life.  The depth and remorse of Logen as he battles his inner demons.  Jezal, well, he doesn&#x27;t see much growth in this installment, but he does develop a certain amount of charm as the book progresses.  While not boring, the first book in the series mostly sets the stage for the events to come.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;before-they-are-hanged&quot;&gt;&lt;em&gt;Before They Are Hanged&lt;&#x2F;em&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The action and intrigue really pick up in this volume.  The stage has already been set in the previous volume and now our character all get to head out on their various adventures and we get to learn a great deal more about who they really are beneath the surface.  This one might be my favorite book of the series since there is just so much going on and it was in this one that I really started to like each of the main characters.  I don&#x27;t want to spoil anything here as the there are several good twists that come along.  Overall though I thought the pacing was great.  Each chapter spends just long enough with a character&#x27;s point of view to keep it interesting and then we are dashed across the world to someone else point of view.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;last-argument-of-kinds&quot;&gt;&lt;em&gt;Last Argument of Kinds&lt;&#x2F;em&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Finally, all the divergent plots coalesce and the shrouds of intrigue are pulled away!  It&#x27;s hard to say too much about this one without getting into spoiler territory but I will say the conclusions are fairly satisfying.  This isn&#x27;t a fairy tale and folks don&#x27;t necessarily get a happy ending but given the dark tones of these books they are satisfyingly realistic endings.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;general-impressions&quot;&gt;General Impressions&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I loved the character development!&lt;&#x2F;li&gt;
+&lt;li&gt;In particular Glokta&#x27;s internal dialogues are some of my favorite.  His dark humour about his lot in life often brings a much-needed levity to otherwise grim circumstances.&lt;&#x2F;li&gt;
+&lt;li&gt;The narration by Steven Pacey was top-notch.  There was plenty of variation in the voices and accents of different characters so it was always clear who was speaking and it really brought the characters to life.&lt;&#x2F;li&gt;
+&lt;li&gt;As previously mentioned, the first book starts a bit slow but it really picks up after that and by the second book it&#x27;s a full on roller coaster.&lt;&#x2F;li&gt;
+&lt;li&gt;The various supporting characters are excellent and most feel like they have real depth to them.&lt;&#x2F;li&gt;
+&lt;li&gt;Falls more on the low fantasy side of the spectrum with a focus on the political intrigues of powerful players, the battles between multiple nations in conflict, and the actions of the main characters within those conflicts.  While Bayaz and his fellow magi are powerful weilders of the arcane, we don&#x27;t see them unleash their power often.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;The_First_Law_covers.6e5ba682c3bacba5.jpg&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Voron Build Update</title>
+        <published>2025-04-14T00:00:00+00:00</published>
+        <updated>2025-04-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/voronbuild-update-20250412/"/>
+        <id>https://blog.techarcanus.com/blog/voronbuild-update-20250412/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/voronbuild-update-20250412/">&lt;p&gt;Completed the Z Drive assembly.  Read about it &lt;a href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;projects&#x2F;voronbuild&#x2F;#assembly-of-z-drives-2-3-4&quot;&gt;here&lt;&#x2F;a&gt; in detail!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Delighted... by chatgpt?!?</title>
+        <published>2025-04-10T00:00:00+00:00</published>
+        <updated>2025-04-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/delighted-by-chatgpt/"/>
+        <id>https://blog.techarcanus.com/blog/delighted-by-chatgpt/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/delighted-by-chatgpt/">&lt;p&gt;An AI chatbot first happened to me today, while working with ChatGPT to create a mermaid.js flowchart, I ran into the limit where it says something along the lines of, &quot;You&#x27;ve reached your limit in this conversation because of... please start a new chat or wait until...&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;While that was mildly annoying, I had already gotten most of what I was looking for out of it and could take it from there.  However it was so dang useful and, dare I say it, friendly in the process of getting it to help me make this mermaidjs chart that it got me to click that little dropdown at the top and click the upgrade button because I was curious, just what are my pay for options if I was to put a little money down. Lo and behold that for $20 a month I could have so much more, and for a moment, I was tempted.  I wouldn&#x27;t call myself a heavy use of ChatGPT but I do use it frequently, maybe daily.  And as the title suggests, I just keep finding delightful little things in ChatGpt.&lt;&#x2F;p&gt;
+&lt;p&gt;The other day, while trying to solve a DNS issue to get this site working I honestly felt like it was cheering me on and it made me smile!&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;ChatGptDnsConvo.4f38bf77a0d2607d.png&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Here&#x27;s the other weird thing I&#x27;ve found as I go back and forth with AI chat clients, the more conversational I get and start talking to them like a person instead of just a machine.  You can see it in my message above, I was excited. I got it working and typed a message much like I might have to one of my coworkers over slack and it responded in kind and tone.  Its darn impressive at times.&lt;&#x2F;p&gt;
+&lt;p&gt;Recently I&#x27;ve also started to use the Google Gemini powered image generation tools in my presention slides.  At first I thought it was a gimmick but now I&#x27;m using it all the time to help find an image to add some zest to my presentations.  I was recently asked to do a career day talk at my son&#x27;s school and I asked for an image of a robot making a peanut butter and jelly sandwich and got this fun little image:&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;pbjbot.75a4f0a620a9fada.jpg&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    Pretending to be a robot who made PB&amp;amp;J sandwiches with a bunch of grade schoolers giving me directions was hilarious!
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Earlier this evening I was poking around in the settings of ChatGPT to see if it had any sort of tracking of how many conversations I&#x27;d had with it and if it showed how many tokens or credits or whatever I&#x27;d maybe used recently (if it does, I didn&#x27;t find it).  What I did find though is that you can customize the voice ChatGPT uses when it reads things to you.  I haven&#x27;t used this feature myself yet, it&#x27;s just a little too close to &lt;a href=&quot;https:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt1798709&#x2F;?ref_=ext_shr_lnk&quot;&gt;&lt;em&gt;Her&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; for my liking but I still decided to play with the voices and hear what they each sounded like.  They all have kind of abstract names like, &quot;Ember&quot;, &quot;Sol&quot;, and &quot;Breeze&quot;.  But there at the end of the list is one called, &quot;Monday&quot; and it&#x27;s a hoot. You need to try it for yourself.&lt;&#x2F;p&gt;
+&lt;p&gt;While I&#x27;m on the topic of things that I like about AI powered chat tools and maybe what I find most useful as a software developer is that with AI chat tools, there is no stupid question and the AI is an incredibly patient teacher.  There is zero recrimination for asking a question about Typescript that I should know but I don&#x27;t because I live all day in C# code.  Unlike when you message a coworker with a question about a block of code they wrote and they don&#x27;t get back to you or say, &quot;just a sec, let me finish this first...&quot; the AI is just there and can give you a run down of what something is doing.  Granted, it doesn&#x27;t have all the context or history on why the code is the way it is, but if you just run into some new syntax you&#x27;ve never seen before or need some help parsing through some particularly gnarly code, its there to help you out with complaint.  I always tell my junior engineers, they can ask me anything, there is no stupid question.  Though I can say from personal experience that while the person you are asking really may mean that and don&#x27;t feel that you are stupid for asking, I feel stupid for asking and showing someone what I don&#x27;t know.  (Which that&#x27;s a me problem to solve, nobody can be expected to know everything.)&lt;&#x2F;p&gt;
+&lt;p&gt;There is a lot of quesitons and concerns I still have around AI and its uses, but sometimes (dare I say it?!?), its not only useful but a delight.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Voron Build Announcement</title>
+        <published>2025-04-08T00:00:00+00:00</published>
+        <updated>2025-04-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/voronbuild-update-20250408/"/>
+        <id>https://blog.techarcanus.com/blog/voronbuild-update-20250408/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/voronbuild-update-20250408/">&lt;p&gt;I&#x27;ve wanted to build a Voron almost since I became inteterested in 3d printing and I&#x27;ve finally taken the plunge to and bought a kit and have started building it.  I&#x27;ve decided to document the process &lt;a href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;projects&#x2F;voronbuild&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;VoronUnboxed.620a575ab12cbb35.jpg&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    What I&amp;#x27;m starting with...
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;custom.css&quot;&gt;
+&lt;div class=&quot;not-prose singleimage-container&quot;&gt;
+  
+  
+  &lt;div class=&quot;imageitem-items&quot;&gt;
+    &lt;img class=&quot;imageitem-items&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;blog.techarcanus.com&amp;#x2F;processed_images&amp;#x2F;FormbotVoron2.4.843861bb01437836.jpg&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;  
+  
+  &lt;div class=&quot;imageitem-items photo-caption&quot;&gt;
+    ...and what I hope to end up with!
+  &lt;&#x2F;div&gt;
+  
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hello World</title>
+        <published>2025-04-07T00:00:00+00:00</published>
+        <updated>2025-04-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              travis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.techarcanus.com/blog/helloworld/"/>
+        <id>https://blog.techarcanus.com/blog/helloworld/</id>
+        
+        <content type="html" xml:base="https://blog.techarcanus.com/blog/helloworld/">&lt;p&gt;&quot;Hello world!&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;How many times have I created a &quot;hello world&quot; app in my career?  Too many to count at this point I&#x27;m guessing.  But its a classic so for this site we are starting at the same place.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve wanted to put up a personal website for many years and I&#x27;ve always ended up strugging with one element or another.  Its either that I don&#x27;t have time, I lack ideas, I get caught up the technical details...etc.&lt;&#x2F;p&gt;
+&lt;p&gt;That last one, getting caught up in the technical elements, has probably been the biggest blocker.  I always think that I want to build something from scratch to flex my technical chops and learn whatever new framework is hot at the moment.  While the initial motivation is high I then run into the other problem of &quot;having enough time&quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;So for this attempt I&#x27;m trying something different.  This blog is using &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;zola&lt;&#x2F;a&gt; which lets me just write (mostly) plain old markdown and start making content quick.  I kind of abhor bloated content management systems like wordpress so something that parses text files and can be statically hosted appeals to me.  I&#x27;m also hoping that removing the barrier of building it from scratch means that I&#x27;ll actually get to the point of actually making content this time around.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;blog&#x2F;images&#x2F;hello_world.png&quot; alt=&quot;Hello World&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
