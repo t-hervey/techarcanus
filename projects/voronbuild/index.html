@@ -1,0 +1,582 @@
+<!doctype html>
+<html class="not-ready lg:text-base" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>
+    Formbot 350mm Voron 2.4 Build - TechArcanus
+  </title>
+
+  <!-- Meta -->
+  <meta name="theme-color" />
+
+  
+  <!-- Author -->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  <meta name="description" content="Formbot 350mm Voron 2.4 Build" />
+  <meta name="author" content="travis" />
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Formbot 350mm Voron 2.4 Build" />
+  <meta property="og:site_name" content="TechArcanus" />
+  <meta property="og:description" content="Formbot 350mm Voron 2.4 Build" />
+  <meta property="og:url" content="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;projects&#x2F;voronbuild&#x2F;" />
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <meta property="og:image" content="https://blog.techarcanus.com/icons/github.svg" />
+  
+  <!---->
+  
+
+  <!-- CSS & JS -->
+  <link rel="preload stylesheet" as="style" href="https://blog.techarcanus.com/main.css" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --bg-dark: #18181b;
+      --header: #e4e4e7;
+      --header-dark: #27272a;
+    }
+  </style>
+
+  
+
+  <!-- Dark Icon -->
+  <link rel="preload" as="image" href="https://blog.techarcanus.com/icons/theme.svg" />
+
+  <!-- Math -->
+  
+  <!---->
+
+  <!-- Mermaid -->
+  
+  <!---->
+  <script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const initMermaid = (isDark) => {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+
+  // The es module script will load defer, so the localStorage should already be set by script in header.
+  // If this script is loaded first, the script in header will dispatch an event to re-render mermaid, it's works too.
+  initMermaid(localStorage.getItem("dark") === "true");
+</script>
+
+  <!---->
+  
+  <!---->
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://blog.techarcanus.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://blog.techarcanus.com/apple-touch-icon.png" />
+
+  <!-- Feeds -->
+  
+  <!---->
+  
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom"
+    href="https://blog.techarcanus.com/atom.xml"
+  />
+   
+  <!---->
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;projects&#x2F;voronbuild&#x2F;" />
+
+  <!-- Head inject -->
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header
+  class="header fixed top-0 z-40 mx-auto min-h-[3.5rem] w-full"
+>
+  <div class="mx-auto w-full max-w-4xl p-3 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <a class="text-2xl font-semibold" href="https://blog.techarcanus.com">TechArcanus</a>
+        <div
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0px] [background:url(./icons/theme.svg)_left_center/cover_no-repeat] dark:[background-position:right] dark:invert"
+          role="button"
+          aria-label="Dark"
+        ></div>
+      </div>
+      
+      <div
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+      ></div>
+      
+    </div>
+    <script>
+      // base
+      const htmlClass = document.documentElement.classList;
+      setTimeout(() => {
+        htmlClass.remove("not-ready");
+      }, 10);
+
+      // mobile menu
+      const btnMenu = document.querySelector(".btn-menu");
+      btnMenu?.addEventListener("click", () => {
+        htmlClass.toggle("open");
+      });
+
+      // dark theme
+      const setDark = (isDark) => {
+        if (isDark) {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "dark" }));
+          htmlClass.add("dark");
+        } else {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "light" }));
+          htmlClass.remove("dark");
+        }
+        localStorage.setItem("dark", isDark);
+      };
+
+      // init
+      const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      if (htmlClass.contains("dark")) {
+        setDark(true);
+      } else {
+        const darkVal = localStorage.getItem("dark");
+        setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+      }
+
+      // listen system
+      darkScheme.addEventListener("change", (event) => {
+        setDark(event.matches);
+      });
+
+      // manual switch
+      const btnDark = document.querySelector(".btn-dark");
+      btnDark.addEventListener("click", () => {
+        setDark(localStorage.getItem("dark") !== "true");
+      });
+    </script>
+    
+    <nav class="flex w-full items-center lg:w-auto">
+      <ul
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0"
+      >
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/projects"
+            >Projects</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/tags"
+            >Tags</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/about"
+            >About</a
+          >
+        </li>
+        
+      </ul>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <!-- Body Start inject -->
+    
+
+    <div class="flex">
+      <div class="order-1 hidden w-[calc((100%-var(--container-3xl))/2)] lg:block"></div>
+      <aside
+        class="sticky top-0 order-3 mt-48 hidden h-min w-[calc((100%-var(--container-3xl))/2)] lg:block"
+      >
+        
+
+      </aside>
+      <main
+        class="prose prose-neutral dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg order-2 mx-auto min-h-[calc(100vh-9rem)] w-full max-w-3xl px-4 pt-24 pb-16 break-words lg:pt-32"
+      >
+        
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="my-0! pb-2.5">Formbot 350mm Voron 2.4 Build</h1>
+    <div class="text-sm antialiased opacity-60">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <span class="mx-1">&middot;</span>
+  <span>travis</span>
+  
+  <!-- Page Info inject -->
+  
+</div>
+
+  </header>
+
+  
+
+  <!-- TOC -->
+  
+<nav class="block-bg prose-a:secondary-link mb-12 flex rounded-lg p-2 text-lg">
+  <details>
+    <summary class="cursor-pointer py-1 pl-4">
+      <span class="ml-2">Table of Contents</span>
+    </summary>
+    <ul class="mx-2">
+      
+      <li>
+        <a href="#a-bit-of-background">A bit of background</a>
+        
+      </li>
+      
+      <li>
+        <a href="#unboxing-and-building-the-frame">Unboxing and Building the Frame</a>
+        
+      </li>
+      
+      <li>
+        <a href="#baseplate-and-starting-assembly-of-z-drives">Baseplate and starting assembly of Z-Drives</a>
+        
+      </li>
+      
+      <li>
+        <a href="#assembly-of-z-drives-2-3-4">Assembly of Z-Drives 2, 3, &amp; 4</a>
+        
+        <ul>
+          
+          <li>
+            <a href="#z-drive-2">Z-Drive #2</a>
+          </li>
+          
+          <li>
+            <a href="#z-drive-3-4">Z-Drive #3 &amp; #4</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+  </details>
+</nav>
+
+<!---->
+
+  <!-- Content -->
+  <section><h1 id="a-bit-of-background">A bit of background</h1>
+<p>I got my start in 3d printing in November of 2022 when my wife sneakily hid an Ender 3 S1 right under my nose for weeks and then gave it to me for our anniversary.  Just about as soon as I had it printing reliably, I started tinkering with it.  Camera mounts, alternative part cooling, installing klipper, and more.  This made me realize that what I really enjoyed most was tinkering with my printer and occasionally using it to actually produce something useful 😃.</p>
+<p>It wasn't long before I got the itch to build my own printer.  A Voron felt like too big of project to start with so after a bit of research and poking around the internet I discovered <a href="https://www.rolohaun3d.ca/3d-printers">Rolohaun 3D's Rook</a> printer that was touted as being a good first printer to build for beginners. I self sourced all of my components and by December 2023 I had my very own Rook 2020 MK1</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;Rook2020MK1.807580ccc189037c.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    This was the photo I used to get my Rook serial, #165
+  </div>
+  
+</div>
+<p>Building the Rook was definitely fun and the <a href="https://discord.com/invite/rolohaun-3d-946191040682008666">community</a> was great to work with but it only increased my desire to eventually build the voron.</p>
+<p>So that brings us to the present, near the end of 2024 I ordered a 350mm Formbot Voron 2.4 R2 and once the holidays had passed I have finally unboxed it and started building.</p>
+<h1 id="unboxing-and-building-the-frame">Unboxing and Building the Frame</h1>
+<p>So many parts had ended up covering the entire table and then some.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;VoronUnboxed.4a1fa8d36fcd7e19.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+<p>Getting the frame together was pretty straightforward.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;VoronFrameBuilt.5872591e6d0e084a.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+<h1 id="baseplate-and-starting-assembly-of-z-drives">Baseplate and starting assembly of Z-Drives</h1>
+<p>So I've had a few delays.  I found that I had overlooked printing one part of the z motor mount and needed to print those.  Unfortunately my Ender 3 S1 that I had printed all my parts on had recently suffered a catastrophic blob of death and resulted in needing to replace the heat block.  Which meant ordering parts (I really should keep a few of those handy as it seems to happen about once a year...)  Finally got the ender rebuilt and tuned back up.  Turns out the likely reason that I got a blob of death in the first place was that my print head had started to wobble some and the eccentric nut on the carriage needed tightening up.</p>
+<p>So parts printed and ready start building again.  Got the first of the z motor mounts done.  Couple of things I learned:</p>
+<ul>
+<li>Getting the 625 bearings on the shaft and in the right position can be a real pain.  I ended up having to use a nail tap to get them into the right position.  I've since read that either sticking the shafts in the freezer overnight or doing the light sanding on them can help with getting them on and in the right position.</li>
+<li>Definitely recommend having the pulley jig for spacing, made getting the pulley on the motor so much easier: <a href="https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Tools/pulley_jig.stl">Voron 2.4 Pulley Jig</a></li>
+</ul>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;ZDriveMountPulley.a5fbeb2d0de14dbb.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    Adjusting the 625 bearings when they didn&#x27;t line up with the mount was a pain!
+  </div>
+  
+</div>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;ZDriveMountAssembled.a7498c92d48a1f1a.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    First of four
+  </div>
+  
+</div>
+<p>And finally getting it attached to the frame with the motor as well.  Definitely like how sharp the classic Voron black and red color combo looks.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;ZDriveInstalled.50c5cfc039d83367.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+<h1 id="assembly-of-z-drives-2-3-4">Assembly of Z-Drives 2, 3, &amp; 4</h1>
+<h2 id="z-drive-2">Z-Drive #2</h2>
+<p>Well, made my first mistake. I had misread these directions from the assembly manual:</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;ZBeltAssemblyManual.2d99dabb609cad7f.png" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    I had taken this to mean it should be positioned at the end of the shaft 🤦‍♂️
+  </div>
+  
+</div>
+<p>What I didn't miss in the directions was the note that said to be sure to use thread locker to make sure on all screws which I dutifully did.</p>
+<p>This in turn meant I couldn't get this screw back out of the pulley and ended up striping the screw trying to do so.  My kit only has the exact number of pulleys of this size that are needed.  But by the end of tomorrow, I'll have a whole supply of 20T 9mm pulleys courtesy of Amazon.  Live and learn.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;StuckScrewPulley.91a87dbf0e5cf874.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    RIP little pulley, hopefully you are the only ruined part of this build. 🤞 At least you were cheap to replace.
+  </div>
+  
+</div>
+<p>I did figure out a neat trick for aligning the motor mounts on the 2020 extrusion.  If you place one of the allen wrenches through the holes you can use them to help align the t-nuts into the right position making it much easier to get everything aligned before inserting the screws.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;2020TNutAlignment.37668b8789477c74.png" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+<h2 id="z-drive-3-4">Z-Drive #3 &amp; #4</h2>
+<p>Pretty much the same as the previous two drives, definitely getting better as I go along and doing each one of these.  Sanding the rods definitely makes it easier to slide the 625 bearings on when they don't slide easily on their own.</p>
+<p>Couple of things I learned:</p>
+<ul>
+<li>If I did this again, I'd probably print out a 33mm tube for easily positioning the pulley on the rod.</li>
+<li>Placing your rod/pulley assembly in the mounting bracket periodically helps to check that everything is lining up as it should.
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;AligningZDriveRod.c2d8a774de6ad0cb.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    Checking as you go along results in smooth pulley operation later.
+  </div>
+  
+</div>
+</li>
+</ul>
+<p>And here they are, all four z drives installed!</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;ZDrivesInstalled.efbc5eb627bc0790.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+</section>
+
+  <hr />
+
+  <!-- Post Taxonomies -->
+  
+<footer class="mt-12 flex flex-col">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <div class="mb-2 flex flex-wrap">
+    <span class="block-bg mr-1.5 mb-1.5 rounded-lg px-5 py-1.5">Tags </span>
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/3dprinting/"
+      >3dprinting</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/voron/"
+      >voron</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/project/"
+      >project</a
+    >
+    
+  </div>
+  
+</footer>
+
+<!---->
+
+  <!-- Post Nav -->
+  
+<!---->
+
+  <!-- Comment -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+      </main>
+    </div>
+
+    <footer class="mx-auto flex max-w-3xl flex-wrap items-center px-8 py-4 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+    <!---->
+    <!---->
+    &copy; 2025<!---->
+    
+    <a class="link" href="https://blog.techarcanus.com">
+      travis
+    </a>
+     |<!---->
+    <!---->
+    <a class="link" href="https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;deed" rel="noopener" target="_blank">
+      CC BY-NC-SA 4.0
+    </a>
+    <!---->
+    
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <a class="link mr-6 lg:ml-6" href="https://www.getzola.org/" rel="noopener" target="_blank">
+      Powered by Zola
+    </a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+
+    <!-- Body End inject -->
+    
+  </body>
+</html>
