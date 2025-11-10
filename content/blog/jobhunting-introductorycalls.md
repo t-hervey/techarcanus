@@ -1,0 +1,30 @@
++++
+title = "Job Hunting: Introductory Phone Screens"
+date = 2025-11-09
+description = "Some tips on how to get past that initial phone screen"
+[taxonomies]
+tags = ["job hunting", "interviewing"]
++++
+
+One of the roles of any senior software engineer who is worth their salt is to help their team be more efficient and productive.  A senior engineer can spend 10 minutes helping a junior engineer and save them several hours of beating their head against the wall. In the same fashion when it comes to job hunting a senior engineer who has gone through this cycle a few more times than his younger colleagues and who has sat on both the interviewer and interviewee side of the table can sometimes have a few tips to hopefully help those who are a bit earlier along in their career shorten the time it takes to find their next opportunity.  It was with this mindset that I recently had a conversation with a younger former coworker.
+
+Those of us who recently were affected by a [reduction in force](@/blog/jobhunting-day01.md) at our company had decided to start having weekly meetings to practice interviewing skills.  During a conversation with a particular individual he mentioned that he felt like he was having difficulty making it past the initial recruiter or screening calls.  That he was trying to work in as many keywords and technical jargon as he could to highlight his skills and hopefully find the right combination to unlock the next round of interviews but at the same time he felt like he wasn't saying enough.
+
+Having worked with this individual, I know he's a great engineer and a dedicated team player and that any employer would be lucky to scoop him up.  So what was he missing?  Well, lets take a step back for a moment and look at our audience during that initial recruiter or screening call.  As a software engineer, you are lucky if the recruiter knows any of the buzz words you're saying.  There are some technical recruiters who do know the jargon and tech talk of engineers but lets face it, if you have applied somewhere and are getting an initial call that is because they have already looked at your resume and determined that the list of skills, languages, frameworks, and technologies already matches what they are looking for. While its important to reaffirm your technical skills during that initial call, its not the only thing that the interviewer is looking for.
+
+{{ feature_image(path="/content/blog/images/pokemonrecruiter.jpeg", width=0, height=400, op="fit_height", caption="I do sometimes wonder if recruiters for technical roles wonder if we are just making stuff up sometimes.") }}
+
+At my previous company, when I was on the interviewer side of the table we took into consideration what we called, "head, heart, and briefcase" and that a candidate should be looked at holistically instead of just as list of technical skills and accomplishments.  While the skills and abilities a candidate has comprised the "Head" portion and ones experiences and accomplishments comprised the "Briefcase".
+
+What I felt that my former associate was omitting during his initial interviews was the heart portion.  That initial call with a recruiter is an opportunity to sell yourself as a human with a personality and drives that can be used to reinforce and drive forward the mission of the company you are applying for.  That recruiter has already determined you meet at least the minimum technical requirements so they are looking to see how you are going to fit culturally and if your passions and motivations align with company values.
+
+What I recommended my colleague do before his next introductory call was do some research on the company.  Find out what their values and mission are.  Then ask yourself a few questions like:
+
+- Does the mission of this company excite you?
+- How do you see yourself contributing to this mission?
+- Do you bring any unique experiences to the table that would benefit their mission?
+- Do they share their cultural values and do they align with your own work habits?
+
+If you can answer yes to most of those questions then find ways to work that into the conversation with the recruiter!
+
+One of the places I recently interviewed with is a leader in online education and was a non-profit to boot.  Before the introductory call I spent some time on their website reading about their mission again what drove them to do what they do.  On top of that I am incredibly passionate about making education available to people so there was already a strong alignment between their mission and my own personal values.  And when I had that initial call, I let the recruiter know that I was passionate about education and how I felt their mission aligned with my own values and beliefs.  I talked about how my prior experience in Higher Ed and a non-profit shaped my career and views in a way that was positive and aligned with their mission.  What we only briefly talked about though was that my technical skills only broadly aligned with what they were looking for.  I'm first and foremost a C#/.Net engineer and they had a Go backend tech stack but that took a backseat to how my Heart and Briefcase would benefit their organization.  And it worked, I got fast tracked to a manager interview which was  followed by design & architecture, coding, and director interviews.  I made it all the way through the gauntlet of interviews.  Sadly, this particular story ends with them making the decision to go with a different candidate who did have more proficiency with Go than me but the point still stands that to get past that initial interview it takes more than just sharing what you know.  Sell them not just on whats in your head, but also the unique experiences and maybe most importantly the heart, passion and drive that you would bring to the role!
