@@ -1,0 +1,425 @@
+<!doctype html>
+<html class="not-ready lg:text-base" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>
+    Job Hunting: Day 5 - TechArcanus
+  </title>
+
+  <!-- Meta -->
+  <meta name="theme-color" />
+
+  
+  <!-- Author -->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  <meta name="description" content="Overwhelmed but excited by the possibilities!" />
+  <meta name="author" content="travis" />
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Job Hunting: Day 5" />
+  <meta property="og:site_name" content="TechArcanus" />
+  <meta property="og:description" content="Overwhelmed but excited by the possibilities!" />
+  <meta property="og:url" content="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day05&#x2F;" />
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <meta property="og:image" content="https://blog.techarcanus.com/icons/github.svg" />
+  
+  <!---->
+  
+
+  <!-- CSS & JS -->
+  <link rel="preload stylesheet" as="style" href="https://blog.techarcanus.com/main.css" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --bg-dark: #18181b;
+      --header: #e4e4e7;
+      --header-dark: #27272a;
+    }
+  </style>
+
+  
+
+  <!-- Dark Icon -->
+  <link rel="preload" as="image" href="https://blog.techarcanus.com/icons/theme.svg" />
+
+  <!-- Math -->
+  
+  <!---->
+
+  <!-- Mermaid -->
+  
+  <!---->
+  <script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const initMermaid = (isDark) => {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+
+  // The es module script will load defer, so the localStorage should already be set by script in header.
+  // If this script is loaded first, the script in header will dispatch an event to re-render mermaid, it's works too.
+  initMermaid(localStorage.getItem("dark") === "true");
+</script>
+
+  <!---->
+  
+  <!---->
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://blog.techarcanus.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://blog.techarcanus.com/apple-touch-icon.png" />
+
+  <!-- Feeds -->
+  
+  <!---->
+  
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom"
+    href="https://blog.techarcanus.com/atom.xml"
+  />
+   
+  <!---->
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day05&#x2F;" />
+
+  <!-- Head inject -->
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header
+  class="header fixed top-0 z-40 mx-auto min-h-[3.5rem] w-full"
+>
+  <div class="mx-auto w-full max-w-4xl p-3 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <a class="text-2xl font-semibold" href="https://blog.techarcanus.com">TechArcanus</a>
+        <div
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0px] [background:url(./icons/theme.svg)_left_center/cover_no-repeat] dark:[background-position:right] dark:invert"
+          role="button"
+          aria-label="Dark"
+        ></div>
+      </div>
+      
+      <div
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+      ></div>
+      
+    </div>
+    <script>
+      // base
+      const htmlClass = document.documentElement.classList;
+      setTimeout(() => {
+        htmlClass.remove("not-ready");
+      }, 10);
+
+      // mobile menu
+      const btnMenu = document.querySelector(".btn-menu");
+      btnMenu?.addEventListener("click", () => {
+        htmlClass.toggle("open");
+      });
+
+      // dark theme
+      const setDark = (isDark) => {
+        if (isDark) {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "dark" }));
+          htmlClass.add("dark");
+        } else {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "light" }));
+          htmlClass.remove("dark");
+        }
+        localStorage.setItem("dark", isDark);
+      };
+
+      // init
+      const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      if (htmlClass.contains("dark")) {
+        setDark(true);
+      } else {
+        const darkVal = localStorage.getItem("dark");
+        setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+      }
+
+      // listen system
+      darkScheme.addEventListener("change", (event) => {
+        setDark(event.matches);
+      });
+
+      // manual switch
+      const btnDark = document.querySelector(".btn-dark");
+      btnDark.addEventListener("click", () => {
+        setDark(localStorage.getItem("dark") !== "true");
+      });
+    </script>
+    
+    <nav class="flex w-full items-center lg:w-auto">
+      <ul
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0"
+      >
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/projects"
+            >Projects</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/tags"
+            >Tags</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/about"
+            >About</a
+          >
+        </li>
+        
+      </ul>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <!-- Body Start inject -->
+    
+
+    <div class="flex">
+      <div class="order-1 hidden w-[calc((100%-var(--container-3xl))/2)] lg:block"></div>
+      <aside
+        class="sticky top-0 order-3 mt-48 hidden h-min w-[calc((100%-var(--container-3xl))/2)] lg:block"
+      >
+        
+
+      </aside>
+      <main
+        class="prose prose-neutral dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg order-2 mx-auto min-h-[calc(100vh-9rem)] w-full max-w-3xl px-4 pt-24 pb-16 break-words lg:pt-32"
+      >
+        
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="my-0! pb-2.5">Job Hunting: Day 5</h1>
+    <div class="text-sm antialiased opacity-60">
+  
+  <time>2025-10-21</time>
+  <span class="mx-1">&middot;</span>
+  <span>6min</span>
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <span class="mx-1">&middot;</span>
+  <span>travis</span>
+  
+  <!-- Page Info inject -->
+  
+</div>
+
+  </header>
+
+  
+
+  <!-- TOC -->
+  
+<!---->
+
+  <!-- Content -->
+  <section><p>Today was marks my the first day when my intention was to utilize the entire day for job hunting as if it was (and is!) my full time job.  Sitting down at my desk this morning I was quickly overwhelmed with the idea of where to start.  Do I respond to LinkedIn messages or go through my email? Or do I check Indeed, LinkedIn, and other sources for new job postings?  Or should I start figuring out a plan for brushing up my "leet code" interviewing skills?!?  Can't forget that I have much needed therapy appointment at 2 and an introductory recruiter call at 4:30!  Oh, and it turns out my daughter forgot her lunch this morning so I need to get that to her before 12:15! 🤯</p>
+<p>Pause. Let's take a deep breath.  I've built intricate data flows between user's browsers and their experience in the UI, down through APIs on the backend, which then handled complex data orchestration and flow through an event driven, asynchronous distributed architecture.  I've planned presentations and given lectures on coding to crowds of inexperienced first time programmers and seasoned vets.  I have taught a 5-year-old to tie his shoes!  I can adapt all those skills to organizing my day to face these new challenges too.</p>
+<p>Like so many organizational techniques, it starts with a simple list.  Let's see what needs to get done today:</p>
+<ul>
+<li>Complete online Assessments for XYZ corp.</li>
+<li>Complete at least 2 recommendations for coworkers on LinkedIn</li>
+<li>Reach out to contact at ABC Corp about referral ~10 minutes</li>
+<li>Look for any <em>new</em> job postings that are interesting and meet requirements
+<ul>
+<li>Apply for them with a tailored resume!</li>
+</ul>
+</li>
+<li>Complete a <a href="https://seanprashad.com/leetcode-patterns/">leetcode challenge</a></li>
+<li>Respond to outstanding messages in email and LinkedIn that may have come in over the weekend.</li>
+<li>Investigate/Research in demand programming languages/frameworks</li>
+<li>Call with recruiter</li>
+</ul>
+<p>I've found though that a list alone is often not enough for an effective day, it's missing a critical component.  If I was to apply my software development and scrum experience here and treated each of these tasks as story or task to be completed, I'd also be assigning points that measure effort or complexity that is involved in completing them so that my team lead and product manager could measure velocity and set realistic expectations for a sprint.  Likewise, here what helps me to turn this list into something more than just a list of chores is to go through and figure out how much time I should allot for each of these things so that I can realistically see, just how much I can get done in a day.  For me this is a critical step because an incomplete list kind of feels like a failure when you see things you didn't get done at the end of the day.  But if I go into it knowing that the list is longer than the hours in the day and need to shuffle some things around I feel a lot better about it.  So this list starts to look something like this:</p>
+<p><strong>Morning</strong></p>
+<ul>
+<li>Complete online Assessments for XYZ corp ~30 minutes</li>
+<li>Respond to outstanding messages in email and LinkedIn that may have come in over the weekend. ~15 minutes</li>
+<li>Complete at least 2 recommendations for coworkers on LinkedIn ~30 minutes</li>
+<li>Look for any <em>new</em> job postings that are interesting and meet requirements ~ 2 hours
+<ul>
+<li>Apply for them with a tailored resume!</li>
+</ul>
+</li>
+</ul>
+<p><strong>Afternoon</strong></p>
+<ul>
+<li>Investigate/Research in demand programming languages/frameworks ~45 minutes</li>
+<li>Complete a leetcode challenge ~1.5 hour (yes, I know you usually have half that time but I'm still warming up and need to refamiliarize myself with them.)</li>
+<li>Therapy appointment ~1 hour</li>
+<li>Reach out to contact at ABC Corp about referral ~10 minutes</li>
+<li>Call with recruiter ~30 minutes</li>
+</ul>
+<p>That's a pretty full day but I felt a lot better after taking a few minutes to just organize and plan what needed to happen.  And in hindsight I had a few curveballs thrown in there too.  Like I mentioned earlier, I had to get my daughter's lunch to her and I also needed to make a trip to the post office today as well that I had to squeeze in there.  A scheduling conflict also came up so that my son ended up having to ride the bus home today and when he showed up we ended up spending some time chatting together which was a welcome addition to my day.  Yeah, a few things are going to get bumped to tomorrow's list, in particular that leetcode challenge didn't happen today but there is always tomorrow for that.</p>
+<p>The highlight of the day though was a call with a recruiter who had reached out to me via LinkedIn.  I'm still new enough in this process that when a legitimate recruiter reaches out and says they think you could be a good fit for roles they have, I'm still kind of flattered.  That they are from a company that not only is hiring remote software engineers but also provides a service to society that you are personally passionate about, well that's just downright icing on the cake!  It was a positive conversation I had and at the end of it I was excited by the prospect and so very hopeful that something might come from this contact.  I could probably write an entire series of blog posts on my philosophy of a job vs vocation but the short version of it is that I seek more than just a job and paycheck. I want to apply my talents and my time to something that will make a difference in the lives of people.  Not every job I've had has allowed me to get that sense of fulfillment, but when I have it's been great.  This isn't the only position I've applied for or talked to recruiters about that had the potential to fulfill that need for vocation, but this is probably the one I've been the most excited about.  And I guess maybe that's my self-prescriptive words of wisdom that I'm taking heart in today.  This hunt for a new job doesn't have to be all dread and dreary, there are real opportunities out there that excite me and that I'd love to spend my days at, stretching my brain and my skills to new heights in order so solve the problems that allow for that organization to make the world a better place.</p>
+</section>
+
+  <hr />
+
+  <!-- Post Taxonomies -->
+  
+<footer class="mt-12 flex flex-col">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <div class="mb-2 flex flex-wrap">
+    <span class="block-bg mr-1.5 mb-1.5 rounded-lg px-5 py-1.5">Tags </span>
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/job-hunting/"
+      >job hunting</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/opentowork/"
+      >opentowork</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/musings/"
+      >musings</a
+    >
+    
+  </div>
+  
+</footer>
+
+<!---->
+
+  <!-- Post Nav -->
+  
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  
+  <a
+    class="block-hover-mask flex min-w-[50%] grow items-center rounded-l-md p-6 pr-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day02-weekend&#x2F;"
+    ><span class="mr-1.5">←</span><span>Job Hunting: Day 2 and the Weekend</span></a
+  >
+  <!---->
+  
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day67&#x2F;"
+    ><span>Job Hunting: Day 6 7</span><span class="ml-1.5">→</span></a
+  >
+  
+</nav>
+
+<!---->
+
+  <!-- Comment -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+      </main>
+    </div>
+
+    <footer class="mx-auto flex max-w-3xl flex-wrap items-center px-8 py-4 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+    <!---->
+    <!---->
+    &copy; 2025<!---->
+    
+    <a class="link" href="https://blog.techarcanus.com">
+      travis
+    </a>
+     |<!---->
+    <!---->
+    <a class="link" href="https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;deed" rel="noopener" target="_blank">
+      CC BY-NC-SA 4.0
+    </a>
+    <!---->
+    
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <a class="link mr-6 lg:ml-6" href="https://www.getzola.org/" rel="noopener" target="_blank">
+      Powered by Zola
+    </a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+
+    <!-- Body End inject -->
+    
+  </body>
+</html>

@@ -1,0 +1,464 @@
+<!doctype html>
+<html class="not-ready lg:text-base" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>
+    Who do you think I am? - TechArcanus
+  </title>
+
+  <!-- Meta -->
+  <meta name="theme-color" />
+
+  
+  <!-- Author -->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  <meta name="description" content="I think it knows more than its saying...🤨" />
+  <meta name="author" content="travis" />
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Who do you think I am?" />
+  <meta property="og:site_name" content="TechArcanus" />
+  <meta property="og:description" content="I think it knows more than its saying...🤨" />
+  <meta property="og:url" content="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;whatdoyouknow&#x2F;" />
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <meta property="og:image" content="https://blog.techarcanus.com/icons/github.svg" />
+  
+  <!---->
+  
+
+  <!-- CSS & JS -->
+  <link rel="preload stylesheet" as="style" href="https://blog.techarcanus.com/main.css" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --bg-dark: #18181b;
+      --header: #e4e4e7;
+      --header-dark: #27272a;
+    }
+  </style>
+
+  
+
+  <!-- Dark Icon -->
+  <link rel="preload" as="image" href="https://blog.techarcanus.com/icons/theme.svg" />
+
+  <!-- Math -->
+  
+  <!---->
+
+  <!-- Mermaid -->
+  
+  <!---->
+  <script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const initMermaid = (isDark) => {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+
+  // The es module script will load defer, so the localStorage should already be set by script in header.
+  // If this script is loaded first, the script in header will dispatch an event to re-render mermaid, it's works too.
+  initMermaid(localStorage.getItem("dark") === "true");
+</script>
+
+  <!---->
+  
+  <!---->
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://blog.techarcanus.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://blog.techarcanus.com/apple-touch-icon.png" />
+
+  <!-- Feeds -->
+  
+  <!---->
+  
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom"
+    href="https://blog.techarcanus.com/atom.xml"
+  />
+   
+  <!---->
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;whatdoyouknow&#x2F;" />
+
+  <!-- Head inject -->
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header
+  class="header fixed top-0 z-40 mx-auto min-h-[3.5rem] w-full"
+>
+  <div class="mx-auto w-full max-w-4xl p-3 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <a class="text-2xl font-semibold" href="https://blog.techarcanus.com">TechArcanus</a>
+        <div
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0px] [background:url(./icons/theme.svg)_left_center/cover_no-repeat] dark:[background-position:right] dark:invert"
+          role="button"
+          aria-label="Dark"
+        ></div>
+      </div>
+      
+      <div
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+      ></div>
+      
+    </div>
+    <script>
+      // base
+      const htmlClass = document.documentElement.classList;
+      setTimeout(() => {
+        htmlClass.remove("not-ready");
+      }, 10);
+
+      // mobile menu
+      const btnMenu = document.querySelector(".btn-menu");
+      btnMenu?.addEventListener("click", () => {
+        htmlClass.toggle("open");
+      });
+
+      // dark theme
+      const setDark = (isDark) => {
+        if (isDark) {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "dark" }));
+          htmlClass.add("dark");
+        } else {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "light" }));
+          htmlClass.remove("dark");
+        }
+        localStorage.setItem("dark", isDark);
+      };
+
+      // init
+      const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      if (htmlClass.contains("dark")) {
+        setDark(true);
+      } else {
+        const darkVal = localStorage.getItem("dark");
+        setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+      }
+
+      // listen system
+      darkScheme.addEventListener("change", (event) => {
+        setDark(event.matches);
+      });
+
+      // manual switch
+      const btnDark = document.querySelector(".btn-dark");
+      btnDark.addEventListener("click", () => {
+        setDark(localStorage.getItem("dark") !== "true");
+      });
+    </script>
+    
+    <nav class="flex w-full items-center lg:w-auto">
+      <ul
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0"
+      >
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/projects"
+            >Projects</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/tags"
+            >Tags</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/about"
+            >About</a
+          >
+        </li>
+        
+      </ul>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <!-- Body Start inject -->
+    
+
+    <div class="flex">
+      <div class="order-1 hidden w-[calc((100%-var(--container-3xl))/2)] lg:block"></div>
+      <aside
+        class="sticky top-0 order-3 mt-48 hidden h-min w-[calc((100%-var(--container-3xl))/2)] lg:block"
+      >
+        
+
+      </aside>
+      <main
+        class="prose prose-neutral dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg order-2 mx-auto min-h-[calc(100vh-9rem)] w-full max-w-3xl px-4 pt-24 pb-16 break-words lg:pt-32"
+      >
+        
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="my-0! pb-2.5">Who do you think I am?</h1>
+    <div class="text-sm antialiased opacity-60">
+  
+  <time>2025-07-18</time>
+  <span class="mx-1">&middot;</span>
+  <span>4min</span>
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <span class="mx-1">&middot;</span>
+  <span>travis</span>
+  
+  <!-- Page Info inject -->
+  
+</div>
+
+  </header>
+
+  
+
+  <!-- TOC -->
+  
+<!---->
+
+  <!-- Content -->
+  <section><p>Recently a coworker said during a meeting, "You should ask ChatGPT who it thinks you are based on its conversations." Which got me to wondering what the chatbot would say about me if I posed similar questions to it.  I should provide some context that I don't tend to have personal conversations with ChatGPT.  I use it mostly as a resource to learn and figure things out.  It's been an incredibly helpful tool at times to figure out how to set up some technology stack I'm unfamiliar with, to parse error logs to find the pertinent bits, and to provide summaries and comparisons of different ideas and technologies.  I also sometimes use it as a design partner when fleshing out ideas for projects like a recent idea I had for a PI Pico based sound detector and have recently been attempting to see how well it can do at coming up with a first pass at some 3D models.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;SoundDetectorCase.11f0a6457ece5aa5.png" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    Prototype design for the aforementioned PI Pico powered sound detector, looks pretty good if you ask me.
+  </div>
+  
+</div>
+<p>All of that to say, I don't really give a whole lot of personal information about myself to ChatGPT, but I was curious to see what it might have inferred or picked up on by my various queries.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;ChatGptKnows.2955ca065d572c5b.png" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+<p>Given the hours and hours that ChatGPT and I have spent in conversation, that's not much.</p>
+<p>My coworker also had ChatGPT generate an image of him based on his conversations.  While not a perfect depiction of him, you'd probably recognize him by the caricature-esque image that it came with.  I wanted to try the same and this is the rather odd result:</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;WeirdChatGptPicOfMe.121d9b94e8098ccb.png" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+<p>There are a few of things to point out here:</p>
+<ul>
+<li>I do not have a beard, nor do I wear glasses. (Well, unless I've stayed up too late and my contacts are drying out...)</li>
+<li>The office and PC arrangement is freakishly accurate. 🤨
+<ul>
+<li>The fact that it knows I use <a href="https://endeavouros.com/">EndeavourOS</a> and Wayland isn't too surprising as I often use ChatGPT to troubleshoot and learn things there.</li>
+<li>I do have a partially assembled Voron 3D printer in my office, though the Ender 3 is in another room.</li>
+<li>The desk is actually correctly oriented to the position of the room I have it in.</li>
+<li>However, it is making some assumptions about my decorating styles with those posters!  Maybe ChatGPT and I should have a conversation about legos sometime.</li>
+</ul>
+</li>
+</ul>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;MyOfficeDesk.61a8c8469cec5d6f.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    It knows how I like my monitors arranged, where my PC sits in relation to the monitors, and that I have an L shaped desk?!? The tools scattered about is pretty accurate too. 😱
+  </div>
+  
+</div>
+<p>Got it. So ChatGPT knows more about my desk and computer than about me.  I think that's a good thing.</p>
+<p>I was curious though, why did it assume I had a beard and glasses.  This is another game I like to play with chatbots and LLMs, asking it to explain why it made such assumptions. Its a trick I've picked up while working with copilot in software development.  When it makes a boneheaded decision and decides to randomly add some new properties to an object or something, I ask it to explain itself which usually leads to a new rule getting added to my copilot instructions file to explain when it shouldn't make assumptions on certain things.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;ExplainYourselfChatGPT.729b340d65ff5358.png" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    Explain yourself!
+  </div>
+  
+</div>
+<p>An interesting response!  Does ChatGPT know I tend to stay up too late doing nerdy things like debugging stack overflows?!?  I wasn't about to go into more detail and answer the questions about my appearance though.  Let the machines keep guessing! 😉</p>
+</section>
+
+  <hr />
+
+  <!-- Post Taxonomies -->
+  
+<footer class="mt-12 flex flex-col">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <div class="mb-2 flex flex-wrap">
+    <span class="block-bg mr-1.5 mb-1.5 rounded-lg px-5 py-1.5">Tags </span>
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/ai/"
+      >AI</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/chatgpt/"
+      >ChatGPT</a
+    >
+    
+  </div>
+  
+</footer>
+
+<!---->
+
+  <!-- Post Nav -->
+  
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  
+  <a
+    class="block-hover-mask flex min-w-[50%] grow items-center rounded-l-md p-6 pr-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;feelgoodfeedback&#x2F;"
+    ><span class="mr-1.5">←</span><span>Feel Good Feedback (Or how to brighten your software dev&#x27;s day)</span></a
+  >
+  <!---->
+  
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day01&#x2F;"
+    ><span>Job Hunting: Day 1</span><span class="ml-1.5">→</span></a
+  >
+  
+</nav>
+
+<!---->
+
+  <!-- Comment -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+      </main>
+    </div>
+
+    <footer class="mx-auto flex max-w-3xl flex-wrap items-center px-8 py-4 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+    <!---->
+    <!---->
+    &copy; 2025<!---->
+    
+    <a class="link" href="https://blog.techarcanus.com">
+      travis
+    </a>
+     |<!---->
+    <!---->
+    <a class="link" href="https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;deed" rel="noopener" target="_blank">
+      CC BY-NC-SA 4.0
+    </a>
+    <!---->
+    
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <a class="link mr-6 lg:ml-6" href="https://www.getzola.org/" rel="noopener" target="_blank">
+      Powered by Zola
+    </a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+
+    <!-- Body End inject -->
+    
+  </body>
+</html>

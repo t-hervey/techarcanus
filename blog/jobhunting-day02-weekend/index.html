@@ -1,0 +1,427 @@
+<!doctype html>
+<html class="not-ready lg:text-base" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>
+    Job Hunting: Day 2 and the Weekend - TechArcanus
+  </title>
+
+  <!-- Meta -->
+  <meta name="theme-color" />
+
+  
+  <!-- Author -->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  <meta name="description" content="A day of small steps in the right direction" />
+  <meta name="author" content="travis" />
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Job Hunting: Day 2 and the Weekend" />
+  <meta property="og:site_name" content="TechArcanus" />
+  <meta property="og:description" content="A day of small steps in the right direction" />
+  <meta property="og:url" content="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day02-weekend&#x2F;" />
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <meta property="og:image" content="https://blog.techarcanus.com/icons/github.svg" />
+  
+  <!---->
+  
+
+  <!-- CSS & JS -->
+  <link rel="preload stylesheet" as="style" href="https://blog.techarcanus.com/main.css" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --bg-dark: #18181b;
+      --header: #e4e4e7;
+      --header-dark: #27272a;
+    }
+  </style>
+
+  
+
+  <!-- Dark Icon -->
+  <link rel="preload" as="image" href="https://blog.techarcanus.com/icons/theme.svg" />
+
+  <!-- Math -->
+  
+  <!---->
+
+  <!-- Mermaid -->
+  
+  <!---->
+  <script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const initMermaid = (isDark) => {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+
+  // The es module script will load defer, so the localStorage should already be set by script in header.
+  // If this script is loaded first, the script in header will dispatch an event to re-render mermaid, it's works too.
+  initMermaid(localStorage.getItem("dark") === "true");
+</script>
+
+  <!---->
+  
+  <!---->
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://blog.techarcanus.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://blog.techarcanus.com/apple-touch-icon.png" />
+
+  <!-- Feeds -->
+  
+  <!---->
+  
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom"
+    href="https://blog.techarcanus.com/atom.xml"
+  />
+   
+  <!---->
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day02-weekend&#x2F;" />
+
+  <!-- Head inject -->
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header
+  class="header fixed top-0 z-40 mx-auto min-h-[3.5rem] w-full"
+>
+  <div class="mx-auto w-full max-w-4xl p-3 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <a class="text-2xl font-semibold" href="https://blog.techarcanus.com">TechArcanus</a>
+        <div
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0px] [background:url(./icons/theme.svg)_left_center/cover_no-repeat] dark:[background-position:right] dark:invert"
+          role="button"
+          aria-label="Dark"
+        ></div>
+      </div>
+      
+      <div
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+      ></div>
+      
+    </div>
+    <script>
+      // base
+      const htmlClass = document.documentElement.classList;
+      setTimeout(() => {
+        htmlClass.remove("not-ready");
+      }, 10);
+
+      // mobile menu
+      const btnMenu = document.querySelector(".btn-menu");
+      btnMenu?.addEventListener("click", () => {
+        htmlClass.toggle("open");
+      });
+
+      // dark theme
+      const setDark = (isDark) => {
+        if (isDark) {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "dark" }));
+          htmlClass.add("dark");
+        } else {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "light" }));
+          htmlClass.remove("dark");
+        }
+        localStorage.setItem("dark", isDark);
+      };
+
+      // init
+      const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      if (htmlClass.contains("dark")) {
+        setDark(true);
+      } else {
+        const darkVal = localStorage.getItem("dark");
+        setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+      }
+
+      // listen system
+      darkScheme.addEventListener("change", (event) => {
+        setDark(event.matches);
+      });
+
+      // manual switch
+      const btnDark = document.querySelector(".btn-dark");
+      btnDark.addEventListener("click", () => {
+        setDark(localStorage.getItem("dark") !== "true");
+      });
+    </script>
+    
+    <nav class="flex w-full items-center lg:w-auto">
+      <ul
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0"
+      >
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/projects"
+            >Projects</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/tags"
+            >Tags</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/about"
+            >About</a
+          >
+        </li>
+        
+      </ul>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <!-- Body Start inject -->
+    
+
+    <div class="flex">
+      <div class="order-1 hidden w-[calc((100%-var(--container-3xl))/2)] lg:block"></div>
+      <aside
+        class="sticky top-0 order-3 mt-48 hidden h-min w-[calc((100%-var(--container-3xl))/2)] lg:block"
+      >
+        
+
+      </aside>
+      <main
+        class="prose prose-neutral dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg order-2 mx-auto min-h-[calc(100vh-9rem)] w-full max-w-3xl px-4 pt-24 pb-16 break-words lg:pt-32"
+      >
+        
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="my-0! pb-2.5">Job Hunting: Day 2 and the Weekend</h1>
+    <div class="text-sm antialiased opacity-60">
+  
+  <time>2025-10-20</time>
+  <span class="mx-1">&middot;</span>
+  <span>5min</span>
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <span class="mx-1">&middot;</span>
+  <span>travis</span>
+  
+  <!-- Page Info inject -->
+  
+</div>
+
+  </header>
+
+  
+
+  <!-- TOC -->
+  
+<nav class="block-bg prose-a:secondary-link mb-12 flex rounded-lg p-2 text-lg">
+  <details>
+    <summary class="cursor-pointer py-1 pl-4">
+      <span class="ml-2">Table of Contents</span>
+    </summary>
+    <ul class="mx-2">
+      
+      <li>
+        <a href="#day-2">Day 2</a>
+        
+      </li>
+      
+      <li>
+        <a href="#the-weekend">The Weekend</a>
+        
+      </li>
+      
+    </ul>
+  </details>
+</nav>
+
+<!---->
+
+  <!-- Content -->
+  <section><h2 id="day-2">Day 2</h2>
+<p>The effervescent enthusiasm and positivity of yesterday has faded on day two. Today definitely feels different.  Part of it I think is the reality of the situation beginning to set in.  The weight and responsibility of knowing that there is a clock ticking on how long funds will last before more drastic actions have to be taken.  For the last several years my job had provided us the income and security that my wife could stay home to manage the household and take care of kids, one of whom has special needs.  My insurance through my company had been excellent and that had always provided a sense of security in knowing that should something happen with our health, we'd be ok.  Having those safety nets being slowly pulled away is a scary prospect.  Reconciling with the fact that the approaching holiday season would likely be leanest my kids have ever known is disheartening.</p>
+<p>A former coworker who was also affected by the RIF at my company reached out on this second day of unemployment and shared that he too was feeling the weight of it, that things felt overwhelming. I imagine if I was to poll some more of my former coworkers that they might feel similar.</p>
+<p>However, while feeling all these things I started to think about how I could pull myself out of the mire I was spiraling towards and I recalled something my former team lead had reminded me of.  One of my responsibilities to my team as a senior engineer was to help unblock the team, that the "we" should come before the "me".  This thought reminded me of the advice I often gave newly minted senior engineers that our role is to be a force multiplier on our teams, that spending 10-15 minutes unblocking someone else on the team might save them hours.  As such, I found myself spending much of the morning of this second day of being unemployed writing LinkedIn recommendations for my former coworkers.  (Unfortunately LinkedIn was having some issues on Friday with their recommendations service so it was only a few days later that I was actually able to post some of these things that I wrote up.)  It may not be much, but it lifted my spirits to think I was doing something to help my former team members. While I was on LinkedIn and writing these, I was also doing some of the regular LinkedIn routine of responding to recruiter messages (and debunking the spam ones 😣!) and looking for opportunities as well.  They weren't huge strides by any means, but they were in the right direction.</p>
+<p>Which brings me back to the conversation with my former coworker.  While we are all reeling from the loss of our jobs and getting back on our feet we don't need to immediately start running.  I wish I could take credit for this pearl of wisdom but if I'm being honest, it came from an episode in season 5 of Agents of Shield that my family recently watched when Agent Jemma Simmons tells another agent who was recovering from a traumatic injury that, "The steps you take don't need to be big, they just need to take you in the right direction"  It may seem a bit trite, but it has stuck with during this process and I've shared it with a few folks recently who have been going through this as well.  When you're recovering from a major setback in life, be kind to yourself, give yourself room to breath and heal.  For myself, that's been slowing down a bit and focusing on the "we" instead of the "me" by writing some recommendations.  Even writing this blog, I hope gives some reassurance and comfort to others going through this process that they are not alone in their feelings and struggles. 🫂</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;jemma-steps.b3ef6964a04020d4.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    To those I&#x27;ve shared this sentiment with, I&#x27;m sorry I&#x27;m not as clever as it may seem, I just watch a lot of good shows and listen to&#x2F;read a lot of excellent books that I borrow such truth gems from.
+  </div>
+  
+</div>
+<h2 id="the-weekend">The Weekend</h2>
+<p>There is not a lot to report on my first weekend without work.  Before I had gotten the news of the layoffs I had already planned some activities with the kids and we followed through with those and spent Saturday at a theme park riding roller coasters after the sun had gone down and partaking in the spooky thrills.  Sunday was a calm and quiet day of restoration.  My church celebrated its 215th year with a combined service that packed the pews of the old building and my spirit felt renewed in the shared fellowship.  It was a cool and rainy afternoon that was perfect fall weather for an afternoon of playing Valheim with my son.  I also finished a book that I had been reading on, John Scalzi's <em>The Shattering Peace</em>.  If I find time, I may write more about it but overall, I thought it was a great installment to the Old Man's War series of books.  That said, I'm rested and ready to see what this week brings.</p>
+</section>
+
+  <hr />
+
+  <!-- Post Taxonomies -->
+  
+<footer class="mt-12 flex flex-col">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <div class="mb-2 flex flex-wrap">
+    <span class="block-bg mr-1.5 mb-1.5 rounded-lg px-5 py-1.5">Tags </span>
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/job-hunting/"
+      >job hunting</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/opentowork/"
+      >opentowork</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/musings/"
+      >musings</a
+    >
+    
+  </div>
+  
+</footer>
+
+<!---->
+
+  <!-- Post Nav -->
+  
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  
+  <a
+    class="block-hover-mask flex min-w-[50%] grow items-center rounded-l-md p-6 pr-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day01&#x2F;"
+    ><span class="mr-1.5">←</span><span>Job Hunting: Day 1</span></a
+  >
+  <!---->
+  
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day05&#x2F;"
+    ><span>Job Hunting: Day 5</span><span class="ml-1.5">→</span></a
+  >
+  
+</nav>
+
+<!---->
+
+  <!-- Comment -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+      </main>
+    </div>
+
+    <footer class="mx-auto flex max-w-3xl flex-wrap items-center px-8 py-4 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+    <!---->
+    <!---->
+    &copy; 2025<!---->
+    
+    <a class="link" href="https://blog.techarcanus.com">
+      travis
+    </a>
+     |<!---->
+    <!---->
+    <a class="link" href="https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;deed" rel="noopener" target="_blank">
+      CC BY-NC-SA 4.0
+    </a>
+    <!---->
+    
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <a class="link mr-6 lg:ml-6" href="https://www.getzola.org/" rel="noopener" target="_blank">
+      Powered by Zola
+    </a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+
+    <!-- Body End inject -->
+    
+  </body>
+</html>

@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="not-ready lg:text-base" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>
+    Job Hunting: Day 6 7 - TechArcanus
+  </title>
+
+  <!-- Meta -->
+  <meta name="theme-color" />
+
+  
+  <!-- Author -->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  <meta name="description" content="Some words of wisdom from my dad.  (Also six-seven 🤷‍♂️)" />
+  <meta name="author" content="travis" />
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Job Hunting: Day 6 7" />
+  <meta property="og:site_name" content="TechArcanus" />
+  <meta property="og:description" content="Some words of wisdom from my dad.  (Also six-seven 🤷‍♂️)" />
+  <meta property="og:url" content="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day67&#x2F;" />
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <meta property="og:image" content="https://blog.techarcanus.com/icons/github.svg" />
+  
+  <!---->
+  
+
+  <!-- CSS & JS -->
+  <link rel="preload stylesheet" as="style" href="https://blog.techarcanus.com/main.css" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --bg-dark: #18181b;
+      --header: #e4e4e7;
+      --header-dark: #27272a;
+    }
+  </style>
+
+  
+
+  <!-- Dark Icon -->
+  <link rel="preload" as="image" href="https://blog.techarcanus.com/icons/theme.svg" />
+
+  <!-- Math -->
+  
+  <!---->
+
+  <!-- Mermaid -->
+  
+  <!---->
+  <script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const initMermaid = (isDark) => {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+
+  // The es module script will load defer, so the localStorage should already be set by script in header.
+  // If this script is loaded first, the script in header will dispatch an event to re-render mermaid, it's works too.
+  initMermaid(localStorage.getItem("dark") === "true");
+</script>
+
+  <!---->
+  
+  <!---->
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://blog.techarcanus.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://blog.techarcanus.com/apple-touch-icon.png" />
+
+  <!-- Feeds -->
+  
+  <!---->
+  
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom"
+    href="https://blog.techarcanus.com/atom.xml"
+  />
+   
+  <!---->
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day67&#x2F;" />
+
+  <!-- Head inject -->
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header
+  class="header fixed top-0 z-40 mx-auto min-h-[3.5rem] w-full"
+>
+  <div class="mx-auto w-full max-w-4xl p-3 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <a class="text-2xl font-semibold" href="https://blog.techarcanus.com">TechArcanus</a>
+        <div
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0px] [background:url(./icons/theme.svg)_left_center/cover_no-repeat] dark:[background-position:right] dark:invert"
+          role="button"
+          aria-label="Dark"
+        ></div>
+      </div>
+      
+      <div
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+      ></div>
+      
+    </div>
+    <script>
+      // base
+      const htmlClass = document.documentElement.classList;
+      setTimeout(() => {
+        htmlClass.remove("not-ready");
+      }, 10);
+
+      // mobile menu
+      const btnMenu = document.querySelector(".btn-menu");
+      btnMenu?.addEventListener("click", () => {
+        htmlClass.toggle("open");
+      });
+
+      // dark theme
+      const setDark = (isDark) => {
+        if (isDark) {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "dark" }));
+          htmlClass.add("dark");
+        } else {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "light" }));
+          htmlClass.remove("dark");
+        }
+        localStorage.setItem("dark", isDark);
+      };
+
+      // init
+      const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      if (htmlClass.contains("dark")) {
+        setDark(true);
+      } else {
+        const darkVal = localStorage.getItem("dark");
+        setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+      }
+
+      // listen system
+      darkScheme.addEventListener("change", (event) => {
+        setDark(event.matches);
+      });
+
+      // manual switch
+      const btnDark = document.querySelector(".btn-dark");
+      btnDark.addEventListener("click", () => {
+        setDark(localStorage.getItem("dark") !== "true");
+      });
+    </script>
+    
+    <nav class="flex w-full items-center lg:w-auto">
+      <ul
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0"
+      >
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/projects"
+            >Projects</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/tags"
+            >Tags</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/about"
+            >About</a
+          >
+        </li>
+        
+      </ul>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <!-- Body Start inject -->
+    
+
+    <div class="flex">
+      <div class="order-1 hidden w-[calc((100%-var(--container-3xl))/2)] lg:block"></div>
+      <aside
+        class="sticky top-0 order-3 mt-48 hidden h-min w-[calc((100%-var(--container-3xl))/2)] lg:block"
+      >
+        
+
+      </aside>
+      <main
+        class="prose prose-neutral dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg order-2 mx-auto min-h-[calc(100vh-9rem)] w-full max-w-3xl px-4 pt-24 pb-16 break-words lg:pt-32"
+      >
+        
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="my-0! pb-2.5">Job Hunting: Day 6 7</h1>
+    <div class="text-sm antialiased opacity-60">
+  
+  <time>2025-10-30</time>
+  <span class="mx-1">&middot;</span>
+  <span>6min</span>
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <span class="mx-1">&middot;</span>
+  <span>travis</span>
+  
+  <!-- Page Info inject -->
+  
+</div>
+
+  </header>
+
+  
+
+  <!-- TOC -->
+  
+<!---->
+
+  <!-- Content -->
+  <section><p>My dad is a man of few words. He kind of personifies that whole less is more mentality when it comes to talking and he tends to mind his own business and not insert his opinion unless asked to do so.  So when he comes to you with unsolicited advice, it's probably best to listen carefully and see what he has to say.  Not being one to text anything more substantial than a sentence or two he called me the other day to check in on me and see how I was doing.  That may seem pretty common that a parent would call to see how their kid is doing after getting laid off from a job but we don't talk over the phone too much.  Partly because I share his affinity for brevity when it comes to conversation at times and likely due to a hearing impairment on his side that can make phone calls difficult for him so we tend not to talk over the phone unless something is afoot.  In this case though he decided to call and I was happy to hear from him.  We chatted for a bit about some of the luck I'd had in getting some interviews and the prospects of others on the horizon.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;Dad.714e36b260c67580.png" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    This is honestly probably my favorite picture of my dad.  It was taken a few years ago during Christmas if you couldn&#x27;t guess.  I love the look of joy on his face as he&#x27;s surrounded by grandkids running around just outside the frame. And then there is the hat 😂
+  </div>
+  
+</div>
+<p>I'm going to paraphrase a bit here but he decided to share a bit of his well-earned wisdom with me as we were drawing to a close in our conversation.  He said to me something to the effect of, "The older I get the more I realize I have less control over things than I'd often like.  I can't control what happens in the world around me but I have come to learn there are three things I can control."  He then simply said, "I am in control of my <strong>attitude, effort, and faith</strong>."  He didn't expound a whole lot on it beyond that, just that those are the three things which comes from himself that he can control and that those elements can help influence your reactions and perceptions to the events around you that you can't control.</p>
+<p>When he told me this, it resonated like someone striking a gong in me.  They so simply summed up how I wanted to approach this whole job hunting thing.  From the beginning I had been trying to flip my perception that being laid off was this terrible thing.  Yeah, the insecurity and stress of the loss of income has at times been kind of terrifying but at the same time I've tried to find the positives things in this too.  This time off has given me the opportunity to take some much-needed rest and to also work on a list of projects that I've been wanting to get to.  At times, the prospect of making a change and starting a new job has been exciting.  I've applied for several roles that if I was to get one of them, it would be really exciting and engaging to either work in a particular tech stack or to help an organization achieve their mission when it aligns with my own values.  Keeping the right attitude through this entire process really helps frame everything you do.</p>
+<p>Effort. I gave myself a bit of grace the first couple of days after the layoff proclamation came but following that I told myself my job was to find a new job.  I've written some previous posts on how I've filled my days with working my way through LinkedIn, following up on leads, and preparing for interviews.  This current job market is definitely an endurance and numbers game.  You have to show up each day and put in the work to make things happen and move the needle in the right direction.  Several friends have shared with me the numbers on their own job searches before landing a job.  Dozens and dozens of applications put in with very low response rates in return.  Tens of hours spent preparing for interviews by brushing up skills or developing new ones to be ready for any question.  Weeks of uncertainty and waiting but not letting up on the effort they were putting forth day after day.  While I know I will feel lucky or fortunate when I get a job, it won't really be luck.  It will be from the effort put forth in cultivating relationships and building a network of contacts, from doing research on the companies that I get interviews with to understand their mission and how my experience and talents can further their goals, from preparing for those always daunting live coding challenges.</p>
+<p>When it comes to faith, one can interpret this one in a few ways.  One could take it to mean that it is necessary to have faith or hope that an opportunity will come along and maybe on the surface he meant it that way too.  However, I've known my father my entire life and I've seen him live a life of Christian faith and action and I know that is what he is speaking of here.  My own faith probably doesn't quite look the same as the path he's walked, to me, it feels a bit more tarnished in places but its there and has been a constant source of comfort in these times.  I'm not going to preach to anyone here or try to sway your mind on religion or anything but both kinds of faith, both the hope of better things to come and that there is a God who watches over us and provides for us is helpful at times like this.  I will share a passage from Jeremiah that has been on my mind though lately and has brought me both hope and renewed faith.  "'For I know the plans I have for you,' declares the Lord, 'plans to prosper you and not to harm you, plans to give you hope and a future.'" - Jeremiah 29:11</p>
+<p>Three simple words: Attitude, Effort, and Faith.  Those have become my reaffirming words when I feel down and discouraged of late.  When the going gets tough, the tough set their attitude in a positive direction, apply all the effort they can muster, and have faith that those efforts will come to fruition.</p>
+</section>
+
+  <hr />
+
+  <!-- Post Taxonomies -->
+  
+<footer class="mt-12 flex flex-col">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <div class="mb-2 flex flex-wrap">
+    <span class="block-bg mr-1.5 mb-1.5 rounded-lg px-5 py-1.5">Tags </span>
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/job-hunting/"
+      >job hunting</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/opentowork/"
+      >opentowork</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/musings/"
+      >musings</a
+    >
+    
+  </div>
+  
+</footer>
+
+<!---->
+
+  <!-- Post Nav -->
+  
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  
+  <a
+    class="block-hover-mask flex min-w-[50%] grow items-center rounded-l-md p-6 pr-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-day05&#x2F;"
+    ><span class="mr-1.5">←</span><span>Job Hunting: Day 5</span></a
+  >
+  <!---->
+  
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;jobhunting-introductorycalls&#x2F;"
+    ><span>Job Hunting: Introductory Phone Screens</span><span class="ml-1.5">→</span></a
+  >
+  
+</nav>
+
+<!---->
+
+  <!-- Comment -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+      </main>
+    </div>
+
+    <footer class="mx-auto flex max-w-3xl flex-wrap items-center px-8 py-4 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+    <!---->
+    <!---->
+    &copy; 2025<!---->
+    
+    <a class="link" href="https://blog.techarcanus.com">
+      travis
+    </a>
+     |<!---->
+    <!---->
+    <a class="link" href="https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;deed" rel="noopener" target="_blank">
+      CC BY-NC-SA 4.0
+    </a>
+    <!---->
+    
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <a class="link mr-6 lg:ml-6" href="https://www.getzola.org/" rel="noopener" target="_blank">
+      Powered by Zola
+    </a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+
+    <!-- Body End inject -->
+    
+  </body>
+</html>

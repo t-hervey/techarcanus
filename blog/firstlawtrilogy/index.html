@@ -1,0 +1,463 @@
+<!doctype html>
+<html class="not-ready lg:text-base" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>
+    Review: First Law Trilogy - TechArcanus
+  </title>
+
+  <!-- Meta -->
+  <meta name="theme-color" />
+
+  
+  <!-- Author -->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  <meta name="description" content="I&#x27;m a little late to this series but finally got to it, here&#x27;s my impressions." />
+  <meta name="author" content="travis" />
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Review: First Law Trilogy" />
+  <meta property="og:site_name" content="TechArcanus" />
+  <meta property="og:description" content="I&#x27;m a little late to this series but finally got to it, here&#x27;s my impressions." />
+  <meta property="og:url" content="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;firstlawtrilogy&#x2F;" />
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <meta property="og:image" content="https://blog.techarcanus.com/icons/github.svg" />
+  
+  <!---->
+  
+
+  <!-- CSS & JS -->
+  <link rel="preload stylesheet" as="style" href="https://blog.techarcanus.com/main.css" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --bg-dark: #18181b;
+      --header: #e4e4e7;
+      --header-dark: #27272a;
+    }
+  </style>
+
+  
+
+  <!-- Dark Icon -->
+  <link rel="preload" as="image" href="https://blog.techarcanus.com/icons/theme.svg" />
+
+  <!-- Math -->
+  
+  <!---->
+
+  <!-- Mermaid -->
+  
+  <!---->
+  <script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const initMermaid = (isDark) => {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+
+  // The es module script will load defer, so the localStorage should already be set by script in header.
+  // If this script is loaded first, the script in header will dispatch an event to re-render mermaid, it's works too.
+  initMermaid(localStorage.getItem("dark") === "true");
+</script>
+
+  <!---->
+  
+  <!---->
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://blog.techarcanus.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://blog.techarcanus.com/apple-touch-icon.png" />
+
+  <!-- Feeds -->
+  
+  <!---->
+  
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom"
+    href="https://blog.techarcanus.com/atom.xml"
+  />
+   
+  <!---->
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;firstlawtrilogy&#x2F;" />
+
+  <!-- Head inject -->
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header
+  class="header fixed top-0 z-40 mx-auto min-h-[3.5rem] w-full"
+>
+  <div class="mx-auto w-full max-w-4xl p-3 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <a class="text-2xl font-semibold" href="https://blog.techarcanus.com">TechArcanus</a>
+        <div
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0px] [background:url(./icons/theme.svg)_left_center/cover_no-repeat] dark:[background-position:right] dark:invert"
+          role="button"
+          aria-label="Dark"
+        ></div>
+      </div>
+      
+      <div
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+      ></div>
+      
+    </div>
+    <script>
+      // base
+      const htmlClass = document.documentElement.classList;
+      setTimeout(() => {
+        htmlClass.remove("not-ready");
+      }, 10);
+
+      // mobile menu
+      const btnMenu = document.querySelector(".btn-menu");
+      btnMenu?.addEventListener("click", () => {
+        htmlClass.toggle("open");
+      });
+
+      // dark theme
+      const setDark = (isDark) => {
+        if (isDark) {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "dark" }));
+          htmlClass.add("dark");
+        } else {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "light" }));
+          htmlClass.remove("dark");
+        }
+        localStorage.setItem("dark", isDark);
+      };
+
+      // init
+      const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      if (htmlClass.contains("dark")) {
+        setDark(true);
+      } else {
+        const darkVal = localStorage.getItem("dark");
+        setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+      }
+
+      // listen system
+      darkScheme.addEventListener("change", (event) => {
+        setDark(event.matches);
+      });
+
+      // manual switch
+      const btnDark = document.querySelector(".btn-dark");
+      btnDark.addEventListener("click", () => {
+        setDark(localStorage.getItem("dark") !== "true");
+      });
+    </script>
+    
+    <nav class="flex w-full items-center lg:w-auto">
+      <ul
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0"
+      >
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/projects"
+            >Projects</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/tags"
+            >Tags</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://blog.techarcanus.com/about"
+            >About</a
+          >
+        </li>
+        
+      </ul>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <!-- Body Start inject -->
+    
+
+    <div class="flex">
+      <div class="order-1 hidden w-[calc((100%-var(--container-3xl))/2)] lg:block"></div>
+      <aside
+        class="sticky top-0 order-3 mt-48 hidden h-min w-[calc((100%-var(--container-3xl))/2)] lg:block"
+      >
+        
+
+      </aside>
+      <main
+        class="prose prose-neutral dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg order-2 mx-auto min-h-[calc(100vh-9rem)] w-full max-w-3xl px-4 pt-24 pb-16 break-words lg:pt-32"
+      >
+        
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="my-0! pb-2.5">Review: First Law Trilogy</h1>
+    <div class="text-sm antialiased opacity-60">
+  
+  <time>2025-04-29</time>
+  <span class="mx-1">&middot;</span>
+  <span>5min</span>
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <span class="mx-1">&middot;</span>
+  <span>travis</span>
+  
+  <!-- Page Info inject -->
+  
+</div>
+
+  </header>
+
+  
+
+  <!-- TOC -->
+  
+<nav class="block-bg prose-a:secondary-link mb-12 flex rounded-lg p-2 text-lg">
+  <details>
+    <summary class="cursor-pointer py-1 pl-4">
+      <span class="ml-2">Table of Contents</span>
+    </summary>
+    <ul class="mx-2">
+      
+      <li>
+        <a href="#the-blade-itself">The Blade Itself</a>
+        
+      </li>
+      
+      <li>
+        <a href="#before-they-are-hanged">Before They Are Hanged</a>
+        
+      </li>
+      
+      <li>
+        <a href="#last-argument-of-kinds">Last Argument of Kinds</a>
+        
+      </li>
+      
+      <li>
+        <a href="#general-impressions">General Impressions</a>
+        
+      </li>
+      
+    </ul>
+  </details>
+</nav>
+
+<!---->
+
+  <!-- Content -->
+  <section><table><thead><tr><th><strong><em>First Law Trilogy</em></strong></th><th></th><th></th></tr></thead><tbody>
+<tr><td></td><td><em>The Blade Itself</em></td><td></td></tr>
+<tr><td></td><td><em>Before They Are Hanged</em></td><td></td></tr>
+<tr><td></td><td><em>Last Argument of Kings</em></td><td></td></tr>
+<tr><td><strong>Author</strong></td><td>Joe Abercrombie</td><td></td></tr>
+<tr><td><strong>Format</strong></td><td>Audiobook</td><td>(Narrated by Steven Pacey)</td></tr>
+<tr><td><strong>Overall Rating</strong></td><td>⭐️⭐️⭐️⭐️/5</td><td></td></tr>
+</tbody></table>
+<p>I've avoided the <em>The First Law Trilogy</em> for years.  Something about the bloody cover and the description on the back really didn't pique my interest.  Descriptions I read of the book painted a dark and grim tale of wretched souls doing sadistic things without the slightest of moral qualms which didn't really sit well with me or my tastes.  Despite all that I even tried reading it once previously and just couldn't get past the first few chapters.</p>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;TheBladeItself.dbd9e7db8dd1ad86.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    First book in the series &#x27;The Blade Itself&#x27; with its bloody cover 🩸🗡️
+  </div>
+  
+</div>
+<p>During a recent trip to my office HQ, a coworker and I were talking about books (specifically audiobooks) that we both had enjoyed.  I of course gushed all fanboy-like about <a href="https://www.goodreads.com/search?utf8=%E2%9C%93&amp;query=dungeon+crawler+carl">Dungeon Crawler Carl</a> and the epic narration of <a href="https://soundbooththeater.com/team/jeff-hays/">Jeff Hays</a> and my coworker in turn told me about his favorite series, the titular <em>First Law Trilogy</em>.  His praise of the series, as enthusiastic as my own of DCC, convinced me enough that I promised to add it to my backlog.  A few weeks later I had finished up my latest audiobook and due to the nature of library holds <em>The Blade Itself</em> was the only thing available at that moment, so I figured I'd give it another go.</p>
+<p>I'm not going to give a full review of each book but more of a quick take on each book in the series and some overall impressions.</p>
+<h2 id="the-blade-itself"><em>The Blade Itself</em></h2>
+<p>Much like my previous attempt, I found the opening chapters of the book kind of slow.  My initial impressions of Glokta, Logen and Jezal were poor.  Glokta came off as some sort of miserly sadistic cripple, Logen a stereotypically brutish warrior, and Jezal as the foppish noble.  In hindsight, you can see that these conventional and unimaginative portrayals were likely just done intentionally so that the author could later flip them on the head and shatter the surrounding tropes. That said, this first book does take its time introducing not only these three but also the host of supporting characters who you only eventually grow to appreciate.  Only after a while do you begin to find the wit and dark humour in Glokta's internal monologue about his life.  The depth and remorse of Logen as he battles his inner demons.  Jezal, well, he doesn't see much growth in this installment, but he does develop a certain amount of charm as the book progresses.  While not boring, the first book in the series mostly sets the stage for the events to come.</p>
+<h2 id="before-they-are-hanged"><em>Before They Are Hanged</em></h2>
+<p>The action and intrigue really pick up in this volume.  The stage has already been set in the previous volume and now our character all get to head out on their various adventures and we get to learn a great deal more about who they really are beneath the surface.  This one might be my favorite book of the series since there is just so much going on and it was in this one that I really started to like each of the main characters.  I don't want to spoil anything here as the there are several good twists that come along.  Overall though I thought the pacing was great.  Each chapter spends just long enough with a character's point of view to keep it interesting and then we are dashed across the world to someone else point of view.</p>
+<h2 id="last-argument-of-kinds"><em>Last Argument of Kinds</em></h2>
+<p>Finally, all the divergent plots coalesce and the shrouds of intrigue are pulled away!  It's hard to say too much about this one without getting into spoiler territory but I will say the conclusions are fairly satisfying.  This isn't a fairy tale and folks don't necessarily get a happy ending but given the dark tones of these books they are satisfyingly realistic endings.</p>
+<h2 id="general-impressions">General Impressions</h2>
+<ul>
+<li>I loved the character development!</li>
+<li>In particular Glokta's internal dialogues are some of my favorite.  His dark humour about his lot in life often brings a much-needed levity to otherwise grim circumstances.</li>
+<li>The narration by Steven Pacey was top-notch.  There was plenty of variation in the voices and accents of different characters so it was always clear who was speaking and it really brought the characters to life.</li>
+<li>As previously mentioned, the first book starts a bit slow but it really picks up after that and by the second book it's a full on roller coaster.</li>
+<li>The various supporting characters are excellent and most feel like they have real depth to them.</li>
+<li>Falls more on the low fantasy side of the spectrum with a focus on the political intrigues of powerful players, the battles between multiple nations in conflict, and the actions of the main characters within those conflicts.  While Bayaz and his fellow magi are powerful weilders of the arcane, we don't see them unleash their power often.</li>
+</ul>
+<link rel="stylesheet" href="https://blog.techarcanus.com/custom.css">
+<div class="not-prose singleimage-container">
+  
+  
+  <div class="imageitem-items">
+    <img class="imageitem-items" src="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;processed_images&#x2F;The_First_Law_covers.a65d4ccf3b5b7e13.jpg" />
+  </div>  
+  
+  <div class="imageitem-items photo-caption">
+    
+  </div>
+  
+</div>
+</section>
+
+  <hr />
+
+  <!-- Post Taxonomies -->
+  
+<footer class="mt-12 flex flex-col">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <div class="mb-2 flex flex-wrap">
+    <span class="block-bg mr-1.5 mb-1.5 rounded-lg px-5 py-1.5">Tags </span>
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/books/"
+      >books</a
+    >
+    
+    <a
+      class="block-bg block-hover mr-1.5 mb-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://blog.techarcanus.com/tags/review/"
+      >review</a
+    >
+    
+  </div>
+  
+</footer>
+
+<!---->
+
+  <!-- Post Nav -->
+  
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  
+  <a
+    class="block-hover-mask flex min-w-[50%] grow items-center rounded-l-md p-6 pr-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;voronbuild-update-20250412&#x2F;"
+    ><span class="mr-1.5">←</span><span>Voron Build Update</span></a
+  >
+  <!---->
+  
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;blog.techarcanus.com&#x2F;blog&#x2F;theforeverwar&#x2F;"
+    ><span>Review: The Forever War</span><span class="ml-1.5">→</span></a
+  >
+  
+</nav>
+
+<!---->
+
+  <!-- Comment -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+      </main>
+    </div>
+
+    <footer class="mx-auto flex max-w-3xl flex-wrap items-center px-8 py-4 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+    <!---->
+    <!---->
+    &copy; 2025<!---->
+    
+    <a class="link" href="https://blog.techarcanus.com">
+      travis
+    </a>
+     |<!---->
+    <!---->
+    <a class="link" href="https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;deed" rel="noopener" target="_blank">
+      CC BY-NC-SA 4.0
+    </a>
+    <!---->
+    
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <a class="link mr-6 lg:ml-6" href="https://www.getzola.org/" rel="noopener" target="_blank">
+      Powered by Zola
+    </a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+
+    <!-- Body End inject -->
+    
+  </body>
+</html>
