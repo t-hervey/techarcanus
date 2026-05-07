@@ -27,7 +27,7 @@
   </figure>
   {% endif %}<!---->
 
-  <h2 class="!my-0 pb-1 font-bold !leading-none">{{ page.title }}</h2>
+  <h2 class="my-0! pb-1 leading-none! font-bold">{{ page.title }}</h2>
 
   <div class="not-prose my-1 truncate">
     {% if page.description %}
@@ -39,7 +39,7 @@
 
   {% include "partials/page_info.html" %}
 
-  <a class="absolute inset-0 text-[0]" href="{{ page.permalink }}">{{ page.title }}</a>
+  <a class="absolute inset-0 text-[0px]" href="{{ page.permalink }}">{{ page.title }}</a>
 </section>
 {% endfor %}
 

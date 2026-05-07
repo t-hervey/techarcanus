@@ -5,3 +5,4 @@
 static/processed_images/
 public/
 *.idea
+.playwright-mcp/
